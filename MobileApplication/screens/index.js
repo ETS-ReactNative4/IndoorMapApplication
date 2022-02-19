@@ -7,6 +7,29 @@ const Index = ( {navigation, route} ) => {
 		<View style={styles.mainView}>
 		<Text>Home Screen</Text>
 			<Button
+				title="Instructions"
+				onPress={() => {
+				navigation.navigate("Instructions", {instructions: {
+					title:	"Instructions"
+				}} )}}/>
+				<Button
+				title="Search"
+				onPress={() => {
+				navigation.navigate("Search", {search: {
+					title:	"Search"
+				}} )}}/>
+				<Button
+				title="Settings"
+				onPress={() => {
+				navigation.navigate("Settings", {settings: {
+					title:	"Settings"
+				}} )}}/>
+		</View>
+	)
+};
+
+/*
+<Button
 				title="Main Building"
 				onPress={() => {
 				navigation.navigate("Map", {map: {
@@ -30,9 +53,7 @@ const Index = ( {navigation, route} ) => {
 					floor:	"Ground Floor",
 					screenNumber: 19
 				}}) }}/>
-		</View>
-	)
-};
+*/
 
 const styles = StyleSheet.create({
 	mainView:{
