@@ -2,7 +2,6 @@ import React from 'react';
 import { Button, View, Text, StyleSheet } from 'react-native';
 
 const Map = ({navigation, route}) => {
-	console.log(route);
 	const map = route.params.map;
 	return (
 		<View style={styles.mainView}>

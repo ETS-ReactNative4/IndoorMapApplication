@@ -3,6 +3,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { MainStackNavigator }  from './StackNavigator';
 import { MainBuildingDrawer } from './MainBuildingNavigator';
 import { NorthWingDrawer } from './NorthWingNavigator';
+import { SouthWingDrawer } from './SouthWingNavigator';
 import Search from "../screens/search";
 
 const Drawer = createDrawerNavigator();
@@ -21,13 +22,6 @@ const MainDrawerNavigator = () => {
 			}}
         />
         <Drawer.Screen
-            name="Search"
-            component={Search}
-            options={{
-                title: 'Search',
-			}}
-        />
-        <Drawer.Screen
             name="Main Building"
             options={{
                 title: 'Main Building',
@@ -40,6 +34,20 @@ const MainDrawerNavigator = () => {
                 title: 'North Wing',
 			}}
             component={NorthWingDrawer}
+        />
+        <Drawer.Screen
+            name="South Wing"
+            options={{
+                title: 'South Wing',
+			}}
+            component={SouthWingDrawer}
+        />
+        <Drawer.Screen
+            name="Search"
+            component={Search}
+            options={{
+                title: 'Search',
+			}}
         />
       </Drawer.Navigator>
 	);

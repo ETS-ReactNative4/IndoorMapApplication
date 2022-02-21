@@ -3,7 +3,7 @@ import Map from "../screens/map";
 
 const Drawer = createDrawerNavigator();
 
-const NorthWingDrawer = () => {
+const SouthWingDrawer = () => {
 	return (
 		<Drawer.Navigator
         drawerPosition="left"
@@ -15,9 +15,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"North Wing",
+					title:	"South Wing",
 					floor:	"Ground Floor",
-					screenNumber: 8
+					screenNumber: 19
 				}}}
         />
         <Drawer.Screen
@@ -27,9 +27,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"North Wing",
+					title:	"South Wing",
 					floor:	"First Floor",
-					screenNumber: 9
+					screenNumber: 20
 				}}}
         />
         <Drawer.Screen
@@ -39,9 +39,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"North Wing",
+					title:	"South Wing",
 					floor:	"Second Floor",
-					screenNumber: 10
+					screenNumber: 21
 				}}}
         />
         <Drawer.Screen
@@ -51,9 +51,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"North Wing",
+					title:	"South Wing",
 					floor:	"Third Floor",
-					screenNumber: 11
+					screenNumber: 22
 				}}}
         />
         <Drawer.Screen
@@ -63,9 +63,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"North Wing",
+					title:	"South Wing",
 					floor:	"Fourth Floor",
-					screenNumber: 12
+					screenNumber: 23
 				}}}
         />
         <Drawer.Screen
@@ -75,9 +75,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"North Wing",
+					title:	"South Wing",
 					floor:	"Fifth Floor",
-					screenNumber: 13
+					screenNumber: 24
 				}}}
         />
         <Drawer.Screen
@@ -87,9 +87,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"North Wing",
+					title:	"South Wing",
 					floor:	"Sixth Floor",
-					screenNumber: 14
+					screenNumber: 25
 				}}}
         />
         <Drawer.Screen
@@ -99,9 +99,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"North Wing",
+					title:	"South Wing",
 					floor:	"Seventh Floor",
-					screenNumber: 15
+					screenNumber: 26
 				}}}
         />
         <Drawer.Screen
@@ -111,9 +111,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"North Wing",
+					title:	"South Wing",
 					floor:	"Eighth Floor",
-					screenNumber: 16
+					screenNumber: 27
 				}}}
         />
         <Drawer.Screen
@@ -123,9 +123,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"North Wing",
+					title:	"South Wing",
 					floor:	"Ninth Floor",
-					screenNumber: 17
+					screenNumber: 28
 				}}}
         />
         <Drawer.Screen
@@ -135,9 +135,21 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"North Wing",
+					title:	"South Wing",
 					floor:	"Tenth Floor",
-					screenNumber: 18
+					screenNumber: 29
+				}}}
+        />
+        <Drawer.Screen
+            name="Eleventh Floor"
+            options={{
+                title: 'Eleventh Floor',
+			}}
+            component={Map}
+            initialParams={{map: {
+					title:	"South Wing",
+					floor:	"Eleventh Floor",
+					screenNumber: 30
 				}}}
         />
       </Drawer.Navigator>
@@ -146,4 +158,4 @@ const NorthWingDrawer = () => {
 
 
 
-export { NorthWingDrawer };
+export { SouthWingDrawer };
