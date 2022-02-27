@@ -2,7 +2,6 @@ import React from 'react';
 import { Button, View, Text, StyleSheet } from 'react-native';
 
 const Index = ( {navigation, route} ) => {
-	console.log(route);
 	return (
 		<View style={styles.mainView}>
 		<Text>Home Screen</Text>
