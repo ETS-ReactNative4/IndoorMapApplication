@@ -4,14 +4,21 @@ import { Button, View, Text, StyleSheet } from 'react-native';
 function Floor(props) {
 	const isThisBuilding = props.isThisBuilding;
 	const isThisFloor = props.isThisFloor;
-	//If on the ground floor of MainBuilding
-	if (isThisBuilding == "MB" && isThisFloor == "G") {
-		return <Text>You're on the ground floor of the main building!</Text>
+
+	//Check for all main building floors.
+	if (isThisBuilding == "MB") {
+		switch (isThisFloor) {
+			case 'G':
+				return <Text>You're on the ground floor of the main building!!</Text>
+				break;
+			case '1':
+				return <Text>You're on the first floor of the main building!!</Text>
+				break;
+			default:
+				return <Text>Invalid Floor.</Text>
+		}
 	}
-	if (isThisBuilding == "MB" && isThisFloor == "1") {
-		return <Text>You're on the first floor of the main building!</Text>
-	}
-	return <Text>Invalid building or floor.</Text>
+	return <Text>Invalid building.</Text>
 }
 
 const Map = ({navigation, route}) => {
