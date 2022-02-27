@@ -15,8 +15,8 @@ const MainBuildingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"Main Building",
-					floor:	"Ground Floor",
+					title:	"MB",
+					floor:	"G",
 					screenNumber: 0
 				}}}
         />
@@ -27,8 +27,8 @@ const MainBuildingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"Main Building",
-					floor:	"First Floor",
+					title:	"MB",
+					floor:	"1",
 					screenNumber: 1
 				}}}
         />
@@ -39,8 +39,8 @@ const MainBuildingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"Main Building",
-					floor:	"Second Floor",
+					title:	"MB",
+					floor:	"2",
 					screenNumber: 2
 				}}}
         />
@@ -51,8 +51,8 @@ const MainBuildingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"Main Building",
-					floor:	"Third Floor",
+					title:	"MB",
+					floor:	"3",
 					screenNumber: 3
 				}}}
         />
@@ -63,8 +63,8 @@ const MainBuildingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"Main Building",
-					floor:	"Fourth Floor",
+					title:	"MB",
+					floor:	"4",
 					screenNumber: 4
 				}}}
         />
@@ -75,8 +75,8 @@ const MainBuildingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"Main Building",
-					floor:	"Fifth Floor",
+					title:	"MB",
+					floor:	"5",
 					screenNumber: 5
 				}}}
         />
@@ -87,8 +87,8 @@ const MainBuildingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"Main Building",
-					floor:	"Sixth Floor",
+					title:	"MB",
+					floor:	"6",
 					screenNumber: 6
 				}}}
         />
@@ -99,8 +99,8 @@ const MainBuildingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"Main Building",
-					floor:	"Seventh Floor",
+					title:	"MB",
+					floor:	"7",
 					screenNumber: 7
 				}}}
         />

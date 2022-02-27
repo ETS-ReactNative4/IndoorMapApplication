@@ -28,33 +28,6 @@ const Index = ( {navigation, route} ) => {
 	)
 };
 
-/*
-<Button
-				title="Main Building"
-				onPress={() => {
-				navigation.navigate("Map", {map: {
-					title:	"Main Building",
-					floor:	"Ground Floor",
-					screenNumber: 0
-				}} )}}/>
-			<Button
-				title="North Wing"
-				onPress={() => {
-				navigation.navigate("Map", {map: {
-					title:	"North Wing",
-					floor:	"Ground Floor",
-					screenNumber: 8
-				}}) }}/>
-			<Button
-				title="South Wing"
-				onPress={() => {
-				navigation.navigate("Map", {map: {
-					title:	"South Wing",
-					floor:	"Ground Floor",
-					screenNumber: 19
-				}}) }}/>
-*/
-
 const styles = StyleSheet.create({
 	mainView:{
 		flex: 1,
