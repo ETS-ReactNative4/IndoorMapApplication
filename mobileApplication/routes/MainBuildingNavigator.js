@@ -17,6 +17,7 @@ const MainBuildingDrawer = () => {
             initialParams={{map: {
 					title:	"MB",
 					floor:	"G",
+                    roomNumber: "000",
 					screenNumber: 0
 				}}}
         />
@@ -29,6 +30,7 @@ const MainBuildingDrawer = () => {
             initialParams={{map: {
 					title:	"MB",
 					floor:	"1",
+                    roomNumber: "000",
 					screenNumber: 1
 				}}}
         />

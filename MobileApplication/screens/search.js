@@ -18,7 +18,8 @@ const Search = ({navigation, route}) => {
 				onPress={() => {
 				navigation.navigate("Map", {map: {
 					title:	room.substring(0, 2),
-					floor:	room.substring(2, 3)
+					floor:	room.substring(2, 3),
+					roomNumber: room,
 				}}) }}/>
 		<Button
 				title="Go Back"
