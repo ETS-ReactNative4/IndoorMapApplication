@@ -8,8 +8,6 @@ function Floor(props) {
 	var isThisBuilding = props.isThisBuilding;
 	var isThisFloor = props.isThisFloor;
 	var isThisRoom = props.isThisRoom;
-	console.log(isThisRoom);
-	console.log(isThisFloor);
 
 	//This is case insensitive
 	if (isThisRoom != null) {
