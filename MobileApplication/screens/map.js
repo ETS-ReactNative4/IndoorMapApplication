@@ -8,15 +8,20 @@ function Floor(props) {
 	var isThisBuilding = props.isThisBuilding;
 	var isThisFloor = props.isThisFloor;
 	var isThisRoom = props.isThisRoom;
-	
-	if (isThisRoom == "The Hub" 
-		|| isThisRoom == "The Great Hall" 
-		|| isThisRoom == "Cafe Tierra" 
-		|| isThisRoom == "Café Tierra"
-		|| isThisRoom == "Costa Coffee" 
-		|| isThisRoom =="IT Help Desk" ) {
-		isThisBuilding = "MB";
-		isThisFloor = "G";
+	console.log(isThisRoom);
+	console.log(isThisFloor);
+
+	//This is case insensitive
+	if (isThisRoom != null) {
+		if ( isThisRoom.match(/Hub/i) 
+			|| isThisRoom.match(/Great Hall/i) 
+			|| isThisRoom.match(/Tierra/i) 
+			|| isThisRoom.match(/Costa/i) 
+			|| isThisRoom.match(/Help Desk/i) ) 
+			{
+				isThisBuilding = "MB";
+				isThisFloor = "G";
+			}
 	}
 
 	//Check for all main building floors.
@@ -35,7 +40,7 @@ function Floor(props) {
 					   useNativeDriver={true}>
 							<Image 
 							source={require('../assets/MainBuildingFloors/MBGroundFloor.png')} 
-							style={styles.zoomedImg}
+							style={styles.zoomedMBImg}
 							/>
 						</ImageZoom>
 					</View>
@@ -54,7 +59,121 @@ function Floor(props) {
 					   useNativeDriver={true}>
 							<Image 
 							source={require('../assets/MainBuildingFloors/MBFirstFloor.png')} 
-							style={styles.zoomedImg}
+							style={styles.zoomedMBImg}
+							/>
+					</ImageZoom>
+				</View>
+				)
+				break;
+			case '2':
+				return (
+				<View style={styles.mainView}>
+					<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={840}
+                       imageHeight={600}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/MainBuildingFloors/MBSecondFloor.png')} 
+							style={styles.zoomedMBImg}
+							/>
+					</ImageZoom>
+				</View>
+				)
+				break;
+			case '3':
+				return (
+				<View style={styles.mainView}>
+					<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={840}
+                       imageHeight={600}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/MainBuildingFloors/MBThirdFloor.png')} 
+							style={styles.zoomedMBImg}
+							/>
+					</ImageZoom>
+				</View>
+				)
+				break;
+			case '4':
+				return (
+				<View style={styles.mainView}>
+					<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={840}
+                       imageHeight={600}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/MainBuildingFloors/MBFourthFloor.png')} 
+							style={styles.zoomedMBImg}
+							/>
+					</ImageZoom>
+				</View>
+				)
+				break;
+			case '5':
+				return (
+				<View style={styles.mainView}>
+					<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={840}
+                       imageHeight={600}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/MainBuildingFloors/MBFifthFloor.png')} 
+							style={styles.zoomedMBImg}
+							/>
+					</ImageZoom>
+				</View>
+				)
+				break;
+			case '6':
+				return (
+				<View style={styles.mainView}>
+					<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={840}
+                       imageHeight={600}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/MainBuildingFloors/MBSixthFloor.png')} 
+							style={styles.zoomedMBImg}
+							/>
+					</ImageZoom>
+				</View>
+				)
+				break;
+			case '7':
+				return (
+				<View style={styles.mainView}>
+					<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={840}
+                       imageHeight={600}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/MainBuildingFloors/MBSeventhFloor.png')} 
+							style={styles.zoomedMBImg}
 							/>
 					</ImageZoom>
 				</View>
@@ -64,8 +183,57 @@ function Floor(props) {
 				return <Text>Invalid Floor.</Text>
 		}
 	}
+
+	//Check for all NorthWing floors.
+	if (isThisBuilding == "N") {
+		switch (isThisFloor) {
+			case 'G':
+				return ( 
+					<View style={styles.mainView}>
+						<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/NorthWingFloors/NorthWing_Groundfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+						</ImageZoom>
+					</View>
+				)
+				break;
+			case '1':
+				return (
+				<View style={styles.mainView}>
+					<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/NorthWingFloors/NorthWing_Firstfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+					</ImageZoom>
+				</View>
+				)
+				break;
+			default:
+				return <Text>Invalid Floor.</Text>
+		}
+	}
+
+
 	return <Text>Invalid room.</Text>
 }
+
 
 const Map = ({navigation, route}) => {
 	const map = route.params.map;
@@ -82,11 +250,17 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		justifyContent: "center",
 	},
-	zoomedImg:{
+	zoomedMBImg:{
 		marginBottom: 10,
 		resizeMode: "cover",
 		width: 840,
 		height: 600
+	},
+	zoomedNWImg:{
+		marginBottom: 10,
+		resizeMode: "cover",
+		width: 600,
+		height: 864
 	}
 });
 

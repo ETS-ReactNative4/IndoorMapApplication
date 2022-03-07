@@ -43,6 +43,7 @@ const MainBuildingDrawer = () => {
             initialParams={{map: {
 					title:	"MB",
 					floor:	"2",
+                    roomNumber: "000",
 					screenNumber: 2
 				}}}
         />
@@ -55,6 +56,7 @@ const MainBuildingDrawer = () => {
             initialParams={{map: {
 					title:	"MB",
 					floor:	"3",
+                    roomNumber: "000",
 					screenNumber: 3
 				}}}
         />
@@ -67,6 +69,7 @@ const MainBuildingDrawer = () => {
             initialParams={{map: {
 					title:	"MB",
 					floor:	"4",
+                    roomNumber: "000",
 					screenNumber: 4
 				}}}
         />
@@ -79,6 +82,7 @@ const MainBuildingDrawer = () => {
             initialParams={{map: {
 					title:	"MB",
 					floor:	"5",
+                    roomNumber: "000",
 					screenNumber: 5
 				}}}
         />
@@ -91,6 +95,7 @@ const MainBuildingDrawer = () => {
             initialParams={{map: {
 					title:	"MB",
 					floor:	"6",
+                    roomNumber: "000",
 					screenNumber: 6
 				}}}
         />
@@ -103,6 +108,7 @@ const MainBuildingDrawer = () => {
             initialParams={{map: {
 					title:	"MB",
 					floor:	"7",
+                    roomNumber: "000",
 					screenNumber: 7
 				}}}
         />

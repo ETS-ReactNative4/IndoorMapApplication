@@ -15,8 +15,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"NW",
+					title:	"N",
 					floor:	"G",
+                    roomNumber: "000",
 					screenNumber: 8
 				}}}
         />
@@ -27,8 +28,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"NW",
+					title:	"N",
 					floor:	"1",
+                    roomNumber: "000",
 					screenNumber: 9
 				}}}
         />
@@ -39,8 +41,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"NW",
+					title:	"N",
 					floor:	"2",
+                    roomNumber: "000",
 					screenNumber: 10
 				}}}
         />
@@ -51,8 +54,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"NW",
+					title:	"N",
 					floor:	"3",
+                    roomNumber: "000",
 					screenNumber: 11
 				}}}
         />
@@ -63,8 +67,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"NW",
+					title:	"N",
 					floor:	"4",
+                    roomNumber: "000",
 					screenNumber: 12
 				}}}
         />
@@ -75,8 +80,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"NW",
+					title:	"N",
 					floor:	"5",
+                    roomNumber: "000",
 					screenNumber: 13
 				}}}
         />
@@ -87,8 +93,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"NW",
+					title:	"N",
 					floor:	"6",
+                    roomNumber: "000",
 					screenNumber: 14
 				}}}
         />
@@ -99,8 +106,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"NW",
+					title:	"N",
 					floor:	"7",
+                    roomNumber: "000",
 					screenNumber: 15
 				}}}
         />
@@ -111,8 +119,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"NW",
+					title:	"N",
 					floor:	"8",
+                    roomNumber: "000",
 					screenNumber: 16
 				}}}
         />
@@ -123,8 +132,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"NW",
+					title:	"N",
 					floor:	"9",
+                    roomNumber: "000",
 					screenNumber: 17
 				}}}
         />
@@ -135,8 +145,9 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"NW",
+					title:	"N",
 					floor:	"X",
+                    roomNumber: "000",
 					screenNumber: 18
 				}}}
         />
