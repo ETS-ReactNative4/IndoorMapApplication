@@ -15,7 +15,7 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"N",
+					title:	"NW",
 					floor:	"G",
                     roomNumber: "000",
 					screenNumber: 8
@@ -28,7 +28,7 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"N",
+					title:	"NW",
 					floor:	"1",
                     roomNumber: "000",
 					screenNumber: 9
@@ -41,7 +41,7 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"N",
+					title:	"NW",
 					floor:	"2",
                     roomNumber: "000",
 					screenNumber: 10
@@ -54,7 +54,7 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"N",
+					title:	"NW",
 					floor:	"3",
                     roomNumber: "000",
 					screenNumber: 11
@@ -67,7 +67,7 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"N",
+					title:	"NW",
 					floor:	"4",
                     roomNumber: "000",
 					screenNumber: 12
@@ -80,7 +80,7 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"N",
+					title:	"NW",
 					floor:	"5",
                     roomNumber: "000",
 					screenNumber: 13
@@ -93,7 +93,7 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"N",
+					title:	"NW",
 					floor:	"6",
                     roomNumber: "000",
 					screenNumber: 14
@@ -106,7 +106,7 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"N",
+					title:	"NW",
 					floor:	"7",
                     roomNumber: "000",
 					screenNumber: 15
@@ -119,7 +119,7 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"N",
+					title:	"NW",
 					floor:	"8",
                     roomNumber: "000",
 					screenNumber: 16
@@ -132,7 +132,7 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"N",
+					title:	"NW",
 					floor:	"9",
                     roomNumber: "000",
 					screenNumber: 17
@@ -145,7 +145,7 @@ const NorthWingDrawer = () => {
 			}}
             component={Map}
             initialParams={{map: {
-					title:	"N",
+					title:	"NW",
 					floor:	"X",
                     roomNumber: "000",
 					screenNumber: 18

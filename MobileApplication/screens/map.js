@@ -183,7 +183,7 @@ function Floor(props) {
 	}
 
 	//Check for all NorthWing floors.
-	if (isThisBuilding == "N") {
+	if (isThisBuilding == "NW") {
 		switch (isThisFloor) {
 			case 'G':
 				return ( 
@@ -222,6 +222,207 @@ function Floor(props) {
 					</ImageZoom>
 				</View>
 				)
+				break;
+			case '2':
+				return (
+				<View style={styles.mainView}>
+					<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/NorthWingFloors/NorthWing_Secondfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+					</ImageZoom>
+				</View>
+				)
+				break;
+			case '3':
+				return (
+				<View style={styles.mainView}>
+					<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/NorthWingFloors/NorthWing_Thirdfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+					</ImageZoom>
+				</View>
+				)
+				break;
+			case '4':
+				return (
+				<View style={styles.mainView}>
+					<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/NorthWingFloors/NorthWing_Fourthfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+					</ImageZoom>
+				</View>
+				)
+				break;
+			case '5':
+				return (
+				<View style={styles.mainView}>
+					<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/NorthWingFloors/NorthWing_Fifthfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+					</ImageZoom>
+				</View>
+				)
+				break;
+			case '6':
+				return (
+				<View style={styles.mainView}>
+					<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/NorthWingFloors/NorthWing_Sixthfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+					</ImageZoom>
+				</View>
+				)
+				break;
+			case '7':
+				return (
+				<View style={styles.mainView}>
+					<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/NorthWingFloors/NorthWing_Seventhfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+					</ImageZoom>
+				</View>
+				)
+				break;
+			case '8':
+				return (
+				<View style={styles.mainView}>
+					<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/NorthWingFloors/NorthWing_Eighthfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+					</ImageZoom>
+				</View>
+				)
+				break;
+			case '9':
+				return (
+				<View style={styles.mainView}>
+					<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/NorthWingFloors/NorthWing_Ninthfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+					</ImageZoom>
+				</View>
+				)
+				break;
+			case 'X':
+				return (
+				<View style={styles.mainView}>
+					<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/NorthWingFloors/NorthWing_Tenthfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+					</ImageZoom>
+				</View>
+				)
+				break;
+			default:
+				return <Text>Invalid Floor.</Text>
+		}
+	}
+
+	//Check for all SouthWing floors.
+	if (isThisBuilding == "SW") {
+		switch (isThisFloor) {
+			case 'G':
+				return <Text>Not yet implemented</Text>
+			/*
+				return ( 
+					<View style={styles.mainView}>
+						<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/NorthWingFloors/NorthWing_Groundfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+						</ImageZoom>
+					</View>
+				)
+			*/
 				break;
 			default:
 				return <Text>Invalid Floor.</Text>
