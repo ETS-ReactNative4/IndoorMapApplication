@@ -403,8 +403,6 @@ function Floor(props) {
 	if (isThisBuilding == "SW") {
 		switch (isThisFloor) {
 			case 'G':
-				return <Text>Not yet implemented</Text>
-			/*
 				return ( 
 					<View style={styles.mainView}>
 						<ImageZoom cropWidth={Dimensions.get('window').width}
@@ -416,13 +414,12 @@ function Floor(props) {
 					   enableCenterFocus={false}
 					   useNativeDriver={true}>
 							<Image 
-							source={require('../assets/NorthWingFloors/NorthWing_Groundfloor.png')} 
+							source={require('../assets/SouthWingFloors/SouthWing_Groundfloor.png')} 
 							style={styles.zoomedNWImg}
 							/>
 						</ImageZoom>
 					</View>
 				)
-			*/
 				break;
 			default:
 				return <Text>Invalid Floor.</Text>
