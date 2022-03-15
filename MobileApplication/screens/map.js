@@ -421,6 +421,215 @@ function Floor(props) {
 					</View>
 				)
 				break;
+			case '1':
+				return ( 
+					<View style={styles.mainView}>
+						<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/SouthWingFloors/SouthWing_Firstfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+						</ImageZoom>
+					</View>
+				)
+				break;
+			case '2':
+				return ( 
+					<View style={styles.mainView}>
+						<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/SouthWingFloors/SouthWing_Secondfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+						</ImageZoom>
+					</View>
+				)
+				break;
+			case '3':
+				return ( 
+					<View style={styles.mainView}>
+						<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/SouthWingFloors/SouthWing_Thirdfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+						</ImageZoom>
+					</View>
+				)
+				break;
+			case '4':
+				return ( 
+					<View style={styles.mainView}>
+						<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/SouthWingFloors/SouthWing_Fourthfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+						</ImageZoom>
+					</View>
+				)
+				break;
+			case '5':
+				return ( 
+					<View style={styles.mainView}>
+						<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/SouthWingFloors/SouthWing_Fifthfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+						</ImageZoom>
+					</View>
+				)
+				break;
+			case '6':
+				return ( 
+					<View style={styles.mainView}>
+						<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/SouthWingFloors/SouthWing_Sixthfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+						</ImageZoom>
+					</View>
+				)
+				break;
+			case '7':
+				return ( 
+					<View style={styles.mainView}>
+						<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/SouthWingFloors/SouthWing_Seventhfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+						</ImageZoom>
+					</View>
+				)
+				break;
+			case '8':
+				return ( 
+					<View style={styles.mainView}>
+						<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/SouthWingFloors/SouthWing_Eighthfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+						</ImageZoom>
+					</View>
+				)
+				break;
+			case '9':
+				return ( 
+					<View style={styles.mainView}>
+						<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/SouthWingFloors/SouthWing_Ninthfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+						</ImageZoom>
+					</View>
+				)
+				break;
+			case 'X':
+				return ( 
+					<View style={styles.mainView}>
+						<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/SouthWingFloors/SouthWing_Tenthfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+						</ImageZoom>
+					</View>
+				)
+				break;
+			case 'E':
+				return ( 
+					<View style={styles.mainView}>
+						<ImageZoom cropWidth={Dimensions.get('window').width}
+                       cropHeight={Dimensions.get('window').height}
+                       imageWidth={600}
+                       imageHeight={864}
+					   maxScale={2.5}
+					   minScale={1}
+					   enableCenterFocus={false}
+					   useNativeDriver={true}>
+							<Image 
+							source={require('../assets/SouthWingFloors/SouthWing_Eleventhfloor.png')} 
+							style={styles.zoomedNWImg}
+							/>
+						</ImageZoom>
+					</View>
+				)
+				break;
 			default:
 				return <Text>Invalid Floor.</Text>
 		}
