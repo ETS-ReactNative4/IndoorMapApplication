@@ -2,8 +2,10 @@ import React from 'react';
 import { Button, View, Text, StyleSheet, Image, Animated, Dimensions } from 'react-native';
 import ReactNativeZoomableView from "@dudigital/react-native-zoomable-view/src/ReactNativeZoomableView";
 import ImageZoom from 'react-native-image-pan-zoom';
-import { mb_G_rooms, mb_1_rooms, mb_2_rooms, mb_3_rooms, mb_4_rooms, mb_5_rooms, mb_6_rooms, mb_7_rooms } from '../rooms.js';
-
+import {
+	mb_G_rooms, mb_1_rooms, mb_2_rooms, mb_3_rooms, mb_4_rooms, mb_5_rooms, mb_6_rooms, mb_7_rooms,
+	nw_G_rooms, nw_1_rooms, nw_2_rooms, nw_3_rooms
+	} from '../rooms.js';
 
 function Floor(props) {
 	var isThisBuilding = props.isThisBuilding;
@@ -34,12 +36,20 @@ function Floor(props) {
 		}
 	}
 
+	//This is case insensitive
+	if (isThisRoom != null) {
+		if (isThisRoom.match(/Final Year/i)) {
+			isThisBuilding = "NW";
+			isThisFloor = "2";
+		}
+	}    
+
 	//Check for all main building floors.
 	if (isThisBuilding == "MB") {
 		switch (isThisFloor) {
 			case 'G':
 				if (mb_G_rooms.indexOf(isThisRoom) == -1) {
-					return <Text>This room does not exist on the ground floor.</Text>
+					return <Text>This room does not exist on the ground floor of the main building.</Text>
                 }
 				return ( 
 					<View style={styles.mainView}>
@@ -61,7 +71,7 @@ function Floor(props) {
 				break;
 			case '1':
 				if (mb_1_rooms.indexOf(isThisRoom) == -1) {
-					return <Text>This room does not exist on the first floor.</Text>
+					return <Text>This room does not exist on the first floor of the main building.</Text>
 				}
 				return (
 				<View style={styles.mainView}>
@@ -83,7 +93,7 @@ function Floor(props) {
 				break;
 			case '2':
 				if (mb_2_rooms.indexOf(isThisRoom) == -1) {
-					return <Text>This room does not exist on the second floor.</Text>
+					return <Text>This room does not exist on the second floor of the main building.</Text>
 				}
 				return (
 				<View style={styles.mainView}>
@@ -105,7 +115,7 @@ function Floor(props) {
 				break;
 			case '3':
 				if (mb_3_rooms.indexOf(isThisRoom) == -1) {
-					return <Text>This room does not exist on the third floor.</Text>
+					return <Text>This room does not exist on the third floor of the main building.</Text>
 				}
 				return (
 				<View style={styles.mainView}>
@@ -127,7 +137,7 @@ function Floor(props) {
 				break;
 			case '4':
 				if (mb_4_rooms.indexOf(isThisRoom) == -1) {
-					return <Text>This room does not exist on the fourth floor.</Text>
+					return <Text>This room does not exist on the fourth floor of the main building.</Text>
 				}                
 				return (
 				<View style={styles.mainView}>
@@ -149,7 +159,7 @@ function Floor(props) {
 				break;
 			case '5':
 				if (mb_5_rooms.indexOf(isThisRoom) == -1) {
-					return <Text>This room does not exist on the fifth floor.</Text>
+					return <Text>This room does not exist on the fifth floor of the main building.</Text>
 				}                
 				return (
 				<View style={styles.mainView}>
@@ -171,7 +181,7 @@ function Floor(props) {
 				break;
 			case '6':
 				if (mb_6_rooms.indexOf(isThisRoom) == -1) {
-					return <Text>This room does not exist on the sixth floor.</Text>
+					return <Text>This room does not exist on the sixth floor of the main building.</Text>
 				}
 				return (
 				<View style={styles.mainView}>
@@ -193,7 +203,7 @@ function Floor(props) {
 				break;
 			case '7':
 				if (mb_7_rooms.indexOf(isThisRoom) == -1) {
-					return <Text>This room does not exist on the seventh floor.</Text>
+					return <Text>This room does not exist on the seventh floor of the main building.</Text>
 				}                
 				return (
 				<View style={styles.mainView}>
@@ -222,6 +232,9 @@ function Floor(props) {
 	if (isThisBuilding == "NW") {
 		switch (isThisFloor) {
 			case 'G':
+				if (nw_G_rooms.indexOf(isThisRoom) == -1) {
+					return <Text>This room does not exist on the ground floor of the northwing.</Text>
+				}
 				return ( 
 					<View style={styles.mainView}>
 						<ImageZoom cropWidth={Dimensions.get('window').width}
@@ -241,6 +254,9 @@ function Floor(props) {
 				)
 				break;
 			case '1':
+				if (nw_1_rooms.indexOf(isThisRoom) == -1) {
+					return <Text>This room does not exist on the first floor of the northwing.</Text>
+				}
 				return (
 				<View style={styles.mainView}>
 					<ImageZoom cropWidth={Dimensions.get('window').width}
@@ -260,6 +276,9 @@ function Floor(props) {
 				)
 				break;
 			case '2':
+				if (nw_2_rooms.indexOf(isThisRoom) == -1) {
+					return <Text>This room does not exist on the second floor of the northwing.</Text>
+				}                
 				return (
 				<View style={styles.mainView}>
 					<ImageZoom cropWidth={Dimensions.get('window').width}
@@ -279,6 +298,9 @@ function Floor(props) {
 				)
 				break;
 			case '3':
+				if (nw_3_rooms.indexOf(isThisRoom) == -1) {
+					return <Text>This room does not exist on the third floor of the northwing.</Text>
+				}                
 				return (
 				<View style={styles.mainView}>
 					<ImageZoom cropWidth={Dimensions.get('window').width}

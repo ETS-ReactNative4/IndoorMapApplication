@@ -55,7 +55,19 @@ const mb_6_rooms = ['000', 'MB677A', 'MB618', 'MB616', 'MB614', 'MB610', 'MB654A
 const mb_7_rooms = ['000', 'MB721', 'MB717A', 'MB717B', 'MB717C', 'MB715', 'MB711', 'MB717D', 'MB710', 'MB708', 'MB708B', 'MB708A', 'MB709', 'MB709A', 'MB706', 'MB705', 'MB707',
     'MB704', 'MB703', 'MB702', 'MB777', 'MB775', 'MB776', 'MB774', 'MB772', 'MB770', 'MB768', 'MB766', 'MB758', 'MB756', 'MB754', 'MB752', 'MB750', 'MB748', 'MB742B', 'MB742A', 'MB740B',
     'MB740A', 'MB738B', 'MB748A', 'MB738', 'MB736', 'MB734', 'MB732', 'MB732A', 'MB726', 'MB724', 'MB773', 'MB771', 'MB769', 'MB767', 'MB765', 'MB761', 'MB759', 'MB757', 'MB755', 'MB753',
-     'MB751','MB747','MB745','MB743','MB741','MB739','MB737','MB735A','MB735B','MB733A','MB733B','MB731','MB729','MB727'];
+    'MB751', 'MB747', 'MB745', 'MB743', 'MB741', 'MB739', 'MB737', 'MB735A', 'MB735B', 'MB733A', 'MB733B', 'MB731', 'MB729', 'MB727'];
 
-export { mb_G_rooms, mb_1_rooms, mb_2_rooms, mb_3_rooms, mb_4_rooms, mb_5_rooms, mb_6_rooms, mb_7_rooms };
+const nw_G_rooms = ['000', 'NWG30', 'NWG02', 'NWG03', 'NWG04', 'NWG06A', 'NWG06', 'NWG06B', 'NWG08', 'NWG20', 'NWG09', 'NWG07', 'NWG24'];
+
+const nw_1_rooms = ['000', 'NW102C', 'NW102A', 'NW102B', 'NW102D', 'NW102', 'NW104', 'NW104A', 'NW104B', 'NW109B', 'NW109', 'NW125', 'NW107', 'NW126', 'NW101C'];
+
+const nw_2_rooms = ['000', 'FINAL YEAR PROJECT LAB', 'FINAL YEAR', 'FINAL YEAR PROJECT', 'NW206', 'NW204', 'NW207', 'NW205', 'NW223', 'NW225', 'NW224', 'NW204', 'NW201', 'NW203A', 'NW203'];
+
+const nw_3_rooms = ['000', 'NW302', 'NW302A', 'NW304A', 'NW304B', 'NW306', 'NW308', 'NW310', 'NW312', 'NW316', 'NW318', 'NW320', 'NW322', 'NW324', 'NW324A', 'NW324B',
+    'NW317', 'NW315', 'NW313', 'NW311', 'NW309', 'NW332', 'NW333', 'NW303', 'NW301', 'NW303A'];
+
+const nw_4_rooms = ['000', 'NW401', 'NW403', 'NW434', 'NW433', 'NW409', 'NW411', 'NW413', 'NW415', 'NW417', 'NW419', 'NW421', 'NW423', 'NW425', 'NW406', 'NW406C', 'NW406B',
+    'NW406A', 'NW404', 'NW402'];
+
+export { mb_G_rooms, mb_1_rooms, mb_2_rooms, mb_3_rooms, mb_4_rooms, mb_5_rooms, mb_6_rooms, mb_7_rooms, nw_G_rooms, nw_1_rooms, nw_2_rooms, nw_3_rooms, nw_4_rooms };
 
