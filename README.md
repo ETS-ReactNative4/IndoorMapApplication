@@ -5,7 +5,9 @@ This is a map navigation system used for a final year project at Aston Universit
 
 To get started, please open Android Studio and download this project. Next, to run the application, open up command prompt, change directory to the 'MobileApplication' folder. Then type:
 
-``expo start``
+```
+expo start
+```
 
 to launch the Expo Developer tools, then open up your phone emulator from Android Studio and have it ready. Finally, click on 'Run on Android Device/Emulator'.
 
@@ -39,8 +41,10 @@ to launch the Expo Developer tools, then open up your phone emulator from Androi
 Please ensure that you have the following installed before attempting to run the project:
 - Android Studio
 - 
-``brew install node 
-npm install expo-cli --global``
+```
+brew install node 
+npm install expo-cli --global
+```
 
 ## Built With
 - <a href="https://www.reactnative.dev">React Native</a>
