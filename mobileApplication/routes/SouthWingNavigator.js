@@ -16,7 +16,8 @@ const SouthWingDrawer = () => {
             component={Map}
             initialParams={{map: {
 					title:	"SW",
-					floor:	"G",
+                floor: "G",
+                roomNumber: "000",
 					screenNumber: 19
 				}}}
         />
@@ -28,7 +29,8 @@ const SouthWingDrawer = () => {
             component={Map}
             initialParams={{map: {
 					title:	"SW",
-					floor:	"1",
+                floor: "1",
+                roomNumber: "000",
 					screenNumber: 20
 				}}}
         />
@@ -40,7 +42,8 @@ const SouthWingDrawer = () => {
             component={Map}
             initialParams={{map: {
 					title:	"SW",
-					floor:	"2",
+                floor: "2",
+                roomNumber: "000",
 					screenNumber: 21
 				}}}
         />
@@ -52,7 +55,8 @@ const SouthWingDrawer = () => {
             component={Map}
             initialParams={{map: {
 					title:	"SW",
-					floor:	"3",
+                floor: "3",
+                roomNumber: "000",
 					screenNumber: 22
 				}}}
         />
@@ -64,7 +68,8 @@ const SouthWingDrawer = () => {
             component={Map}
             initialParams={{map: {
 					title:	"SW",
-					floor:	"4",
+                floor: "4",
+                roomNumber: "000",
 					screenNumber: 23
 				}}}
         />
@@ -76,7 +81,8 @@ const SouthWingDrawer = () => {
             component={Map}
             initialParams={{map: {
 					title:	"SW",
-					floor:	"5",
+                floor: "5",
+                roomNumber: "000",
 					screenNumber: 24
 				}}}
         />
@@ -88,7 +94,8 @@ const SouthWingDrawer = () => {
             component={Map}
             initialParams={{map: {
 					title:	"SW",
-					floor:	"6",
+                floor: "6",
+                roomNumber: "000",
 					screenNumber: 25
 				}}}
         />
@@ -100,7 +107,8 @@ const SouthWingDrawer = () => {
             component={Map}
             initialParams={{map: {
 					title:	"SW",
-					floor:	"7",
+                floor: "7",
+                roomNumber: "000",
 					screenNumber: 26
 				}}}
         />
@@ -112,7 +120,8 @@ const SouthWingDrawer = () => {
             component={Map}
             initialParams={{map: {
 					title:	"SW",
-					floor:	"8",
+                floor: "8",
+                roomNumber: "000",
 					screenNumber: 27
 				}}}
         />
@@ -124,7 +133,8 @@ const SouthWingDrawer = () => {
             component={Map}
             initialParams={{map: {
 					title:	"SW",
-					floor:	"9",
+                floor: "9",
+                roomNumber: "000",
 					screenNumber: 28
 				}}}
         />
@@ -136,7 +146,8 @@ const SouthWingDrawer = () => {
             component={Map}
             initialParams={{map: {
 					title:	"SW",
-					floor:	"X",
+                floor: "X",
+                roomNumber: "000",
 					screenNumber: 29
 				}}}
         />
@@ -148,7 +159,8 @@ const SouthWingDrawer = () => {
             component={Map}
             initialParams={{map: {
 					title:	"SW",
-					floor:	"E",
+                floor: "E",
+                roomNumber: "000",
 					screenNumber: 30
 				}}}
         />
