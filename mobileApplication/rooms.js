@@ -69,5 +69,57 @@ const nw_3_rooms = ['000', 'NW302', 'NW302A', 'NW304A', 'NW304B', 'NW306', 'NW30
 const nw_4_rooms = ['000', 'NW401', 'NW403', 'NW434', 'NW433', 'NW409', 'NW411', 'NW413', 'NW415', 'NW417', 'NW419', 'NW421', 'NW423', 'NW425', 'NW406', 'NW406C', 'NW406B',
     'NW406A', 'NW404', 'NW402'];
 
-export { mb_G_rooms, mb_1_rooms, mb_2_rooms, mb_3_rooms, mb_4_rooms, mb_5_rooms, mb_6_rooms, mb_7_rooms, nw_G_rooms, nw_1_rooms, nw_2_rooms, nw_3_rooms, nw_4_rooms };
+const nw_5_rooms = ['000', 'NW502', 'NW504A', 'NW504', 'NW508A', 'NW506', 'NW508', 'NW527', 'NW525', 'NW523', 'NW521', 'NW519', 'NW517', 'NW515', 'NW513', 'NW511', 'NW532', 'NW533', 'NW505', 'NW503'];
+
+const nw_6_rooms = ['000', 'NW602', 'NW604', 'NW606', 'NW609', 'NW608A', 'NW608B', 'NW208D', 'NW608C', 'NW610', 'NW612', 'NW614', 'NW616', 'NW618', 'NW621',
+    'NW619', 'NW617', 'NW615A', 'NW615', 'NW613', 'NW611', 'NW609', 'NW629', 'NW630', 'NW601'];
+
+const nw_7_rooms = ['000', 'NW702', 'NW704', 'NW706', 'NW708', 'NW710', 'NW712', 'NW714', 'NW714A', 'NW715', 'NW713', 'NW711', 'NW709', 'NW707A', 'NW707', 'NW722', 'NW723', 'NW701A', 'NW701'];
+
+const nw_8_rooms = ['000', 'NW802A', 'NW802', 'NW802C', 'NW802D', 'NW804', 'NW806', 'NW808', 'NW810', 'N812', 'NW814', 'NW816', 'NW816A', 'NW818', 'NW820A', 'NW820B', 'NW820C', 'NW820D',
+    'NW820E', 'NW820F', 'NW820G', 'NW820H', 'NW820J', 'NW811', 'NW809C', 'NW809', 'NW809B', 'NW809A', 'NW807', 'NW805', 'NW859', 'NW858', 'NW803', 'NW801', 'NW803A'];
+
+const nw_9_rooms = ['000', 'NW902', 'NW904', 'NW906', 'NW908', 'NW910', 'NW912', 'NW914', 'NW916', 'NW918', 'NW918A', 'NW920', 'NW920A', 'NW922A', 'NW922B', 'NW922C', 'NW922D',
+    'NW922E', 'NW922F', 'NW922G', 'NW922H', 'NW923', 'NW921', 'NW919', 'NW917', 'NW915', 'NW913A', 'NW913', 'NW911', 'NW959', 'NW905', 'NW901', 'NW903'];
+
+const nw_10_rooms = ['000', 'NWX02', 'NWX04', 'NWX04A', 'NWX06A', 'NWX06B', 'NWX08', 'NWX10', 'NWX12', 'NWX14', 'NWX16', 'NWX17', 'NWX15', 'NWX13', 'NWX11', 'NWX09', 'NWX57', 'NWX56', 'NWX03','NWX01A', 'NWX01' ];
+
+const sw_G_rooms = ['000', 'MAIN RECEPTION', 'SWG07','SWG23A', 'SWG23', 'SWG23B', 'SWG24', 'SWG25A', 'SWG26', 'SWG28', 'SWG29', 'SWG30', 'SWG12A', 'SWG12', 'MAIN ENTRANCE', 'ENTRANCE' ];
+
+const sw_1_rooms = ['000', 'PLACEMENT', 'PLACEMENT TEAM', 'PLACEMENT OFFICE', 'SW103', 'SW105', 'SW107', 'SW111', 'SW120', 'SW118', 'SW116', 'SW114', 'SW112', 'SW110', 'SW108', 'SW106', 'SW109',
+    'SW109A', 'SW106A', 'SW138'];
+
+const sw_2_rooms = ['000', 'SW207', 'SW211', 'SW213', 'DIGITAL MARKET', 'DIGITAL MARKETING', 'S214', 'PR', 'PR, GRAPHIC DESIGN', 'PR, GRAPHIC DESIGN, PUBLICATIONS AND EVENTS', 'GRAPHIC DESIGN',
+    'PUBLICATIONS AND EVENTS', 'S212', 'INTERNATIONAL OFFICE', 'INTERNATIONAL', 'SW210', 'MARKET RESEARCH', 'SCHOOLS AND LIASION', 'LIASION', 'SW208', 'SW206C', 'SW226'];
+
+const sw_3_rooms = ['000', 'SW305', 'SW305A', 'SW309', 'SW309A', 'SW312G', 'SW310', 'SW312D', 'SW312D', 'SW308', 'SW304A', 'SW312'];
+
+const sw_4_rooms = ['000', 'SW405', 'SW407', 'SW407A', 'SW409', 'SW409A', 'SW411', 'SW413', 'SW414A', 'SW415', 'SW417', 'SW419', 'SW414', 'SW414A', 'SW414B', 'SW414C',
+    'SW410', 'SW410H', 'SW410G', 'SW410F', 'SW410E', 'SW410D', 'SW410C', 'SW410B', 'SW410A', 'SW408', 'SW406', 'SW408A'];
+
+const sw_5_rooms = ['000', 'SW505', 'SW507C', 'SW507B', 'SW507A', 'SW509A', 'SW509B', 'SW509C', 'SW511', 'SW511A', 'SW510B', 'SW510C', 'SW510D', 'SW510E', 'SW510', 'SW510A',
+    'SW508D', 'SW508H', 'SW508', 'SW508G', 'SW508B', 'SW508A', 'SW508F', 'SW508E', 'SW508C', 'SW506A', 'SW506B', 'SW508', 'SW504'];
+
+const sw_6_rooms = ['000', 'SW603', 'SW605A', 'SW605', 'SW607', 'SW609', 'SW609B', 'SW609C', 'SW611', 'SW613', 'SW615C', 'SW615A', 'SW615B', 'SW620C', 'SW620B', 'SW620A', 'SW618',
+    'SW616', 'SW614', 'SW612', 'SW612A', 'SW612B', 'SW610A', 'SW610B', 'SW608', 'SW604'];
+
+const sw_7_rooms = ['000', 'SW701', 'SW703', 'SW705', 'SW707', 'SW709', 'SW711', 'SW713', 'SW715', 'SW717', 'SW719', 'SW724', 'SW722', 'SW720', 'SW716', 'SW714', 'SW712', 'SW710', 'SW708', 'SW705', 'SW704'];
+
+const sw_8_rooms = ['000', 'SW802A', 'SW802', 'SW804', 'SW805', 'SW808', 'SW807', 'SW809', 'SW810', 'SW811', 'SW812', 'SW813', 'SW814', 'SW815', 'SW816', 'SW817', 'SW818',
+    'SW819', 'SW820', 'SW821', 'SW822', 'SW823', 'SW840', 'SW841', 'SW842'];
+
+const sw_9_rooms = ['000', 'SW905A', 'SW905B', 'SW907A', 'SW907B', 'SW909', 'SW909B', 'SW911A', 'SW911B', 'SW911C', 'SW911D', 'SW920B', 'SW920C', 'SW920', 'SW918A', 'SW918',
+    'SW916', 'SW914', 'SW912', 'SW910', 'SW908', 'SW906'];
+
+const sw_10_rooms = ['000', 'SWX05', 'SWX07', 'SWX09', 'SWX11', 'SWX13', 'SWX13B', 'SWX15', 'SWX17', 'SWX19', 'SWX21', 'SWX23', 'SWX20C', 'SWX20B', 'SWX20A', 'SWX18',
+    'SWX16', 'SWX14', 'SWX12', 'SWX10', 'SWX08'];
+
+const sw_11_rooms = ['000', 'SWE25', 'SWE27', 'SWE26', 'SWE09', 'SWE08', 'SWE07', 'SWE06', 'SWE05', 'SWE04', 'SWE14', 'SWE13', 'SWE12', 'SWE11', 'SWE03', 'SWE02',
+    'SWE01', 'SWE10', 'SWE24', 'SWE23', 'SWE10C', 'SWE10B'];
+
+export {
+    mb_G_rooms, mb_1_rooms, mb_2_rooms, mb_3_rooms, mb_4_rooms, mb_5_rooms, mb_6_rooms, mb_7_rooms,
+    nw_G_rooms, nw_1_rooms, nw_2_rooms, nw_3_rooms, nw_4_rooms, nw_5_rooms, nw_6_rooms, nw_7_rooms, nw_8_rooms, nw_9_rooms, nw_10_rooms,
+    sw_G_rooms, sw_1_rooms, sw_2_rooms, sw_3_rooms, sw_4_rooms, sw_5_rooms, sw_6_rooms, sw_7_rooms, sw_8_rooms, sw_9_rooms, sw_10_rooms, sw_11_rooms
+};
 
