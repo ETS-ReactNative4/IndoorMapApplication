@@ -39,7 +39,8 @@ to launch the Expo Developer tools, then open up your phone emulator from Androi
 ## Prerequisities
 
 Please ensure that you have the following installed before attempting to run the project:
-- Android Studio
+- <a href="https://developer.android.com/studio">Android Studio</a> 
+(If you need help on installing Android Studio, online instructions and guides are available on YouTube)
 
 ```
 brew install node 
