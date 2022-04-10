@@ -39,6 +39,7 @@ to launch the Expo Developer tools, then open up your phone emulator from Androi
 Please ensure that you have the following installed before attempting to run the project:
 - Android Studio
 > brew install node
+> 
 > npm install expo-cli --global
 
 ## Built With
