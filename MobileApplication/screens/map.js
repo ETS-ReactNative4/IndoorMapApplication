@@ -1,6 +1,5 @@
 import React from 'react';
 import { TouchableOpacity, View, Text, StyleSheet, Image, Animated, Dimensions } from 'react-native';
-import ReactNativeZoomableView from "@dudigital/react-native-zoomable-view/src/ReactNativeZoomableView";
 import ImageZoom from 'react-native-image-pan-zoom';
 import {
 	mb_G_rooms, mb_1_rooms, mb_2_rooms, mb_3_rooms, mb_4_rooms, mb_5_rooms, mb_6_rooms, mb_7_rooms,
@@ -11,7 +10,6 @@ import {
 function WasSearched(props) {
 	var navigation = props.navigate;
 	var room = props.room;
-
 	if (!room.match(/000/i)){
 		return (
 			<View style={styles.bottom}>
@@ -29,6 +27,7 @@ function WasSearched(props) {
 	}
     return <View></View>;
 }
+
 
 function Floor(props) {
 	var isThisBuilding = props.isThisBuilding;
