@@ -9,7 +9,7 @@ To get started, please open Android Studio and download this project. Next, to r
 expo start
 ```
 
-to launch the Expo Developer tools, then open up your phone emulator from Android Studio and have it ready. Finally, click on 'Run on Android Device/Emulator'.
+To launch the Expo Developer tools, then open up your phone emulator from Android Studio and have it ready. Finally, click on 'Run on Android Device/Emulator' from the Expo Developer Tools.
 
 ## Features Implemented
 
