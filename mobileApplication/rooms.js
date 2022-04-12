@@ -1,121 +1,9127 @@
-const mb_G_rooms = ['000','MBG30', 'MBG30A', 'MBG28', 'MBG28A', 'MBG26', 'THE HUB', 'MBG24', 'MBG22', 'MBG22A', 'MBG16', 'Enabling Team', 'MBG14', 'IT', 'HELP', 'HELP DESK', 'IT HELP DESK', 'MBG10A',
-    'MBG12', 'MBG10', 'MBG8', 'CAFE TIERRA', 'CAFE', 'COSTA', 'COSTA COFFEE', 'MBG82', 'MBG83', 'MBG80A', 'MBG80', 'CONFERENCE ASTON', 'MBG78', 'MBG76', 'MBG74', 'MBG72', 'MBG54', 'MBG56',
-    'MBG52', 'MBG50', 'MBG50A', 'MBG48', 'MBG38E', 'MBG38', 'EXECUTIVE SUITE', 'MBG46A', 'MBG38A', 'MBG38B', 'MBG38C', 'MBG25E', 'MBG25', 'MBG25D', 'MBG25C', 'MBG25B', 'MBG25A',
-    'MBG23', 'MBG25G', 'MBG25F', 'MBG21C', 'MBG21B', 'MBG21', 'MBG21A', 'MBG21D', 'MBG19B', 'MBG19A', 'MBG19', 'BANK', 'SARTANDER BANK', 'MBG11', 'MBG7', 'MBG81', 'MBG79', 'MBG77', 'MBG75',
-    'MBG73', 'MBG71', 'MBG63', 'MBG60A', 'MBG60B', 'MBG60C', 'MBG60D', 'MBG60E', 'MBG61', 'MBG59', 'MBG57', 'MBG55', 'MBG53', 'COUNCIL ROOM', 'MBG45', 'MBG43', 'MBG41B', 'MBG41', 'MBG41A',
-    'MBG39', 'MBG37A', 'MBG37', 'MBG35', 'MBG33', 'MBG31', 'MBG27', 'GREAT HALL', 'THE GREAT HALL', 'HUB'];
-
-const mb_1_rooms = ['000','MB1113A', 'MB136', 'MB134', 'MB132', 'MB130', 'MB128', 'MB126A', 'MB126', 'MB124', 'MB124A', 'MB122', 'MB118', 'MB116', 'MB114', 'MB110H', 'MB110G', 'MB110F', 'MB110E', 'MB110D', 'MB110C', 'MB110B', 'MB110A',
-    'MB108', 'MB190', 'MB188', 'MB186', 'MB184E', 'MB184D', 'MB184C', 'MB184B', 'MB184A', 'MB182A', 'MB128B', 'MB180C', 'MB180B', 'MB180A', 'MB178A', 'MB178', 'MB176', 'MB174', 'MB172', 'MB170', 'MB168', 'MB166', 'MB164A', 'MB164',
-    'MB160', 'MB158', 'MB156', 'MB154R', 'MB154S', 'MB154Q', 'MB154T', 'MB154', 'MB154P', 'MB154N', 'MB154M', 'MB154L', 'MB154K', 'MB154J', 'MB154H', 'MB154A', 'MB154B', 'MB154C', 'MB154D', 'MB154E', 'MB154F', 'MB154G', 'MB150', 'MB148', 'MB138B',
-    'MB138A', 'MB138C', 'MB138B', 'MB143', 'MB144', 'MB139', 'MB142', 'MB137', 'MB140', 'MB133', 'EPS RECEPTION', 'MB129', 'MB129A', 'MB129B', 'MB129C', 'MB127', 'MB125', 'MB127A', 'MB127C', 'MB125A', 'MB123A', 'MB123', 'MB121', 'MB119',
-    'MB117', 'MB115', 'MB113', 'MB111', 'MB111A', 'MB111B', 'MB109B', 'MB107', 'MB107A', 'MB189', 'MB185', 'MB183', 'MB163', 'MB161B', 'MB161A', 'MB1133', 'MB159C', 'Model Shop', 'MB159', 'MB159A', 'MB159B', 'MB153', 'MB153J', 'MB153H',
-    'MB153G', 'MB153F', 'MB153E', 'MB153D', 'MB153C', 'MB153B', 'MB153A', 'MB151', 'MB149', 'MB147', 'MB135A','MB135'
+const mb_G_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'MBG30',
+        x: -43.5,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG30A',
+        x: -43.5,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG28',
+        x: -43.5,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG28A',
+        x: -43.5,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG26',
+        x: -110,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'THE HUB',
+        x: -110,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'HUB',
+        x: -110,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG24',
+        x: -185,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG22',
+        x: -229,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'FINANCE CENTRE',
+        x: -229,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG22A',
+        x: -229,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'ENABLING TEAM',
+        x: -295,
+        y: -129,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG16',
+        x: -295,
+        y: -129,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG14',
+        x: -285,
+        y: -100,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'IT HELP DESK',
+        x: -285,
+        y: -100,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'HELP DESK',
+        x: -285,
+        y: -100,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG12',
+        x: -289,
+        y: 11,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG10A',
+        x: -289,
+        y: 11,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG8',
+        x: -292,
+        y: 92,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'CAFE TIERRA',
+        x: -161,
+        y: 143,
+        scale: 1.9,
+        duration: 2000
+    },
+    {
+        name: 'TIERRA',
+        x: -161,
+        y: 143,
+        scale: 1.9,
+        duration: 2000
+    },
+    {
+        name: 'COSTA',
+        x: -161,
+        y: 143,
+        scale: 1.9,
+        duration: 2000
+    },
+    {
+        name: 'COSTA COFFEE',
+        x: -161,
+        y: 143,
+        scale: 1.9,
+        duration: 2000
+    },
+    {
+        name: 'MBG82',
+        x: 76,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG83',
+        x: 76,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG80A',
+        x: 106,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG80',
+        x: 184,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'CONFERENCE ASTON',
+        x: 184,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG78',
+        x: 249,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG76',
+        x: 301,
+        y: 107,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG74',
+        x: 301,
+        y: 83,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG72',
+        x: 301,
+        y: 27,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG54',
+        x: 301,
+        y: -23,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG56',
+        x: 301,
+        y: -23,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG52',
+        x: 301,
+        y: -88,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG50',
+        x: 301,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG50A',
+        x: 295,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG48',
+        x: 246,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG38E',
+        x: 210,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'EXECUTIVE SUITE',
+        x: 143,
+        y: -131,
+        scale: 2.2,
+        duration: 2000
+    },
+    {
+        name: 'MBG38',
+        x: 143,
+        y: -131,
+        scale: 2.2,
+        duration: 2000
+    },
+    {
+        name: 'MBG46A',
+        x: 149,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG38A',
+        x: 105,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG38C',
+        x: 64,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG38B',
+        x: 64,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG27',
+        x: -28,
+        y: -126,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG31',
+        x: -9,
+        y: -113,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG35',
+        x: 42,
+        y: -127,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG33',
+        x: 8,
+        y: -98,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'THE GREAT HALL',
+        x: 5,
+        y: 32,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'GREAT HALL',
+        x: 5,
+        y: 32,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG25E',
+        x: -67,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG25D',
+        x: -117,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG25C',
+        x: -117,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG25B',
+        x: -117,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG25A',
+        x: -117,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG25',
+        x: -155,
+        y: -118,
+        scale: 1.9,
+        duration: 2000
+    },
+    {
+        name: 'MBG23',
+        x: -228,
+        y: -146,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG25G',
+        x: -228,
+        y: -146,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG25F',
+        x: -228,
+        y: -146,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG21C',
+        x: -230,
+        y: -120,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG21B',
+        x: -230,
+        y: -120,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG21',
+        x: -230,
+        y: -120,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG21A',
+        x: -233,
+        y: -81,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG19B',
+        x: -233,
+        y: -81,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG19A',
+        x: -233,
+        y: -81,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG21D',
+        x: -233,
+        y: -81,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SARTANDER BANK',
+        x: -232,
+        y: -34,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG7',
+        x: -232,
+        y: 44,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG81',
+        x: 112,
+        y: 124,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG79',
+        x: 157,
+        y: 124,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG77',
+        x: 196,
+        y: 124,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG75',
+        x: 230,
+        y: 124,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG73',
+        x: 235,
+        y: 83,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG71',
+        x: 242,
+        y: 43,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG63',
+        x: 154,
+        y: 56,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG60A',
+        x: 192,
+        y: -2,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG60B',
+        x: 141,
+        y: -10,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG60C',
+        x: 141,
+        y: -10,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG60D',
+        x: 141,
+        y: -10,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG60E',
+        x: 141,
+        y: -10,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG61',
+        x: 98,
+        y: -10,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG11',
+        x: -123,
+        y: -7,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG59',
+        x: 243,
+        y: -46,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG57',
+        x: 243,
+        y: -46,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG55',
+        x: 240,
+        y: -81,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG53',
+        x: 240,
+        y: -81,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG45',
+        x: 195,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG41B',
+        x: 142,
+        y: -145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG43',
+        x: 142,
+        y: -145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG41',
+        x: 142,
+        y: -145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG41A',
+        x: 86,
+        y: -145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG39',
+        x: 86,
+        y: -145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG37A',
+        x: 86,
+        y: -145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MBG37',
+        x: 86,
+        y: -145,
+        scale: 2.5,
+        duration: 2000
+    },
 ];
 
-const mb_2_rooms = ['000', 'MB2114A', 'MB211N', 'MB211O', 'MB211M', 'MB211L', 'MB211', 'MB211A', 'MB211B', 'MB211C', 'MB211D', 'MB211E', 'MB211K', 'MB211J', 'MB211H', 'MB211G', 'MB211F', 'MB209', 'MB205', 'MB267',
-    'MB265', 'MB265H', 'MB265G', 'MB265F', 'MB265E', 'MB265D', 'MB265C', 'MB265B', 'MB265A', 'MB265L', 'MB265K', 'MB265J', 'MB263', 'MB262', 'MB261', 'MB259A', 'MB257', 'MB255', 'MB255B', 'MB255A',
-    'MB251', 'MB249D', 'MB249C', 'MB249B', 'MB249A', 'MB247A', 'MB247', 'MB245', 'MB241', 'MB239', 'MB231', 'MB229', 'MB227', 'MB225', 'MB223', 'MB221', 'MB216', 'MB216A', 'MB216B', 'MB214D', 'MB214E', 'MB214F', 'MB214',
-    'MB214G', 'MB214H', 'MB214J', 'MB214K', 'MB214C', 'MB214B', 'MB214A', 'MB214N', 'MB214M', 'MB214L', 'MB212', 'MB208', 'MB210A', 'MB210', 'MB206', 'MB204', 'MB202', 'MB276', 'MB268', 'MB266',
-    'MB258', 'MB256', 'MB256A', 'MB256B', 'MB256C', 'MB256D', 'MB256E', 'MB256F', 'MB256G', 'MB254', 'MB252', 'MB250', 'MB248', 'MB242', 'MB226C', 'MB226D', 'MB226B', 'MB226E', 'MB226A', 'MB226F',
-    'MB222', 'MB224', 'MB222M', 'MB222L', 'MB222K', 'MB222J', 'MB222H', 'MB222G', 'MB222A', 'MB222B', 'MB222C', 'MB222D', 'MB222E', 'MB222F', 'MB220', 'MB218C', 'MB218B', 'MB218','MB218A'];
-
-const mb_3_rooms = ['000', 'MB3121A', 'MB321', 'MB313N', 'MB313P', 'MB313Q', 'MB313M', 'MB313L', 'MB313K', 'MB313J', 'MB313H', 'MB313G', 'MB313F', 'MB313E', 'MB313A', 'MB313B', 'MB313C', 'MB313D', 'MB311',
-    'MB309', 'MB307', 'MB373', 'MB371', 'MB369A', 'MB363A', 'MB363', 'MB361A', 'MB361', 'MB355F', 'MB355G', 'MB355H', 'MB355', 'MB355E', 'MB355D', 'MB355C', 'MB355B', 'MB355A', 'MB351B', 'MB351', 'MB351A', 'MB351C',
-    'MB347', 'MB343', 'MB341', 'MB341C', 'MB339A', 'MB339', 'MB337', 'MB331', 'MB329', 'MB329A', 'MB327', 'MB325A', 'MB326', 'MB324', 'MB316', 'MB314C', 'MB314D', 'MB314E', 'MB310J', 'MB314', 'MB314B', 'MB314A',
-    'MB310H', 'MB310G', 'MB310F', 'MB310E', 'MB310K', 'MB310L', 'MB310M', 'MB310', 'MB310D', 'MB310C', 'MB310B', 'MB310A', 'MB308', 'MB306', 'MB304', 'MB374', 'MB372', 'MB370', 'MB368', 'MB366',
-    'MB364', 'MB362', 'MB360', 'MB358B', 'MB358A', 'MB358C', 'MB358', 'MB358D', 'MB352', 'MB352A', 'MB350', 'MB348', 'MB346C', 'MB346A', 'MB346B', 'MB334B', 'MB334C', 'MB334', 'MB332', 'MB330',
-    'MB328A', 'MB328B', 'MB328', 'MB326',
+const mb_1_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'MB1113A',
+        x: -53,
+        y: -150,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB136',
+        x: -103,
+        y: -150,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB134',
+        x: -103,
+        y: -150,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB132',
+        x: -103,
+        y: -150,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB130',
+        x: -103,
+        y: -150,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB128',
+        x: -170,
+        y: -150,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB126A',
+        x: -170,
+        y: -150,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB126',
+        x: -170,
+        y: -150,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB124A',
+        x: -170,
+        y: -150,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB124',
+        x: -214,
+        y: -150,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB122',
+        x: -214,
+        y: -150,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB118',
+        x: -293,
+        y: -128,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB116',
+        x: -293,
+        y: -81,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB114',
+        x: -283,
+        y: -56,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB110',
+        x: -291,
+        y: -35,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB110A',
+        x: -291,
+        y: -35,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB110B',
+        x: -291,
+        y: -35,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB110C',
+        x: -291,
+        y: -35,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB110D',
+        x: -291,
+        y: -35,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB110E',
+        x: -291,
+        y: -35,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB110F',
+        x: -291,
+        y: -35,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB110G',
+        x: -291,
+        y: -35,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB110H',
+        x: -291,
+        y: -35,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB108',
+        x: -291,
+        y: 102,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB190',
+        x: -222,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB188',
+        x: -187,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB186',
+        x: -141,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB184',
+        x: -95,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB184A',
+        x: -95,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB184B',
+        x: -95,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB184C',
+        x: -95,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB184D',
+        x: -95,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB184E',
+        x: -95,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB182A',
+        x: -54,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB182B',
+        x: -27,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB180C',
+        x: 44,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB180B',
+        x: 66,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB180A',
+        x: 66,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB178A',
+        x: 100,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB178',
+        x: 100,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB176',
+        x: 147,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB174',
+        x: 147,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB172',
+        x: 147,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB170',
+        x: 193,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB168',
+        x: 193,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB166',
+        x: 193,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB164A',
+        x: 243,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB164',
+        x: 243,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB160',
+        x: 297,
+        y: 106,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB158',
+        x: 297,
+        y: 106,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB156',
+        x: 301,
+        y: 70,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB154',
+        x: 301,
+        y: 17,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB154R',
+        x: 301,
+        y: 17,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB154S',
+        x: 301,
+        y: 17,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB154Q',
+        x: 301,
+        y: 17,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB154T',
+        x: 301,
+        y: 17,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB154P',
+        x: 301,
+        y: -88,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB154A',
+        x: 301,
+        y: -88,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB154N',
+        x: 301,
+        y: -88,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB154B',
+        x: 301,
+        y: -88,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB154M',
+        x: 301,
+        y: -88,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB154C',
+        x: 301,
+        y: -88,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB154AL',
+        x: 301,
+        y: -88,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB154D',
+        x: 301,
+        y: -88,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB154K',
+        x: 301,
+        y: -88,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB154E',
+        x: 301,
+        y: -88,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB154J',
+        x: 301,
+        y: -88,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB154F',
+        x: 301,
+        y: -88,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB154H',
+        x: 301,
+        y: -88,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB154G',
+        x: 301,
+        y: -88,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB150',
+        x: 301,
+        y: -145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB148',
+        x: 200,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB138B',
+        x: 142,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB138A',
+        x: 108,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB138C',
+        x: 108,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB144',
+        x: 108,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB137',
+        x: 55,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB140',
+        x: 55,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB133',
+        x: 4,
+        y: -145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'EPS RECEPTION',
+        x: 4,
+        y: -145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB129',
+        x: -44,
+        y: -145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB129A',
+        x: -44,
+        y: -145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB129B',
+        x: -44,
+        y: -145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB129C',
+        x: -44,
+        y: -145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB127',
+        x: -97,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB125',
+        x: -108,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB127A',
+        x: -143,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB127C',
+        x: -143,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB125A',
+        x: -143,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB123A',
+        x: -143,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB123',
+        x: -173,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB121',
+        x: -173,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB119',
+        x: -228,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB117',
+        x: -245,
+        y: -111,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB115',
+        x: -228,
+        y: -92,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB113',
+        x: -228,
+        y: -31,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB111',
+        x: -228,
+        y: -31,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB111A',
+        x: -216,
+        y: -2,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB111B',
+        x: -216,
+        y: -2,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB109B',
+        x: -221,
+        y: 52,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB107',
+        x: -221,
+        y: 110,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB107A',
+        x: -221,
+        y: 110,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB185',
+        x: -147,
+        y: 123,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB183',
+        x: -79,
+        y: 116,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB163',
+        x: 92,
+        y: 116,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB161B',
+        x: 132,
+        y: 116,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB161A',
+        x: 198,
+        y: 116,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB1133',
+        x: 238,
+        y: 112,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB159C',
+        x: 249,
+        y: 108,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB159',
+        x: 243,
+        y: 81,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MODEL SHOP',
+        x: 243,
+        y: 81,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB159B',
+        x: 242,
+        y: 27,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB159A',
+        x: 242,
+        y: 27,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB153',
+        x: 237,
+        y: -66,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB153A',
+        x: 237,
+        y: -66,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB153B',
+        x: 237,
+        y: -66,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB153C',
+        x: 237,
+        y: -66,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB153D',
+        x: 237,
+        y: -66,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB153E',
+        x: 237,
+        y: -66,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB153F',
+        x: 237,
+        y: -66,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB153G',
+        x: 237,
+        y: -66,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB153H',
+        x: 237,
+        y: -66,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB153J',
+        x: 237,
+        y: -66,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB151',
+        x: 237,
+        y: -113,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB149',
+        x: 218,
+        y: -132,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB147',
+        x: 168,
+        y: -139,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB135A',
+        x: 155,
+        y: -134,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB143',
+        x: 126,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB145',
+        x: 126,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB135',
+        x: 84,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB139',
+        x: 84,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB142',
+        x: 84,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
 ];
 
-const mb_4_rooms = ['000', 'MB418B', 'MB418C', 'MB418', 'MB416', 'MB418A', 'MB407', 'MB405', 'MB486', 'MB482', 'MB480', 'MB478', 'MB476', 'MB464', 'MB464A', 'MB464B', 'MB464C', 'MB464D', 'MB462',
-    'MB460D', 'MB460C', 'MB460B', 'MB460A', 'MB460E', 'MB460F', 'MB460G', 'MB440', 'MB438', 'MB438V', 'MB438U', 'MB438T', 'MB438S', 'MB438R', 'MB438Q', 'MB438P', 'MB438N', 'MB438M', 'MB438L',
-    'MB438K', 'MB438J', 'MB438H', 'MB438G', 'MB438F', 'MB438A', 'MB438B', 'MB438C', 'MB438D', 'MB438E', 'MB436', 'MB434L', 'MB434', 'MB434Q', 'MB434P', 'MB434N', 'MB434M', 'MB434K', 'MB434J',
-    'MB434H', 'MB434H', 'MB434F', 'MB434E', 'MB434D', 'MB434C', 'MB434B', 'MB434A', 'MB432', 'MB430', 'MB419', 'MB417', 'MB411', 'MB413', 'MB408', 'MB406', 'MB404', 'MB402', 'MB479', 'MB477',
-    'MB473', 'MB471', 'MB469', 'MB469A', 'MB467A', 'MB467', 'MB463', 'MB461', 'MB459', 'MB459A', 'MB441', 'MB439E', 'MB439F', 'MB439G', 'MB439H', 'MB439J', 'MB439K', 'MB439L', 'MB439D', 'MB439C', 'MB439B', 'MB439A',
-    'MB431', 'MB431B','MB431A'
+const mb_2_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'MB2114A',
+        x: -52,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB211N',
+        x: -93,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB211M',
+        x: -93,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB211O',
+        x: -93,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB211L',
+        x: -93,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB211',
+        x: -140,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB211A',
+        x: -140,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB211B',
+        x: -140,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB211C',
+        x: -140,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB211D',
+        x: -140,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB211E',
+        x: -140,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB211F',
+        x: -140,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB211G',
+        x: -140,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB211H',
+        x: -140,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB211J',
+        x: -140,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB211K',
+        x: -140,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB209',
+        x: -231,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB205',
+        x: -285,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB267',
+        x: -187,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB265',
+        x: -98,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB265A',
+        x: -98,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB265B',
+        x: -98,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB265C',
+        x: -98,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB265D',
+        x: -98,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB265E',
+        x: -98,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB265F',
+        x: -98,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB265G',
+        x: -98,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB265H',
+        x: -98,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB265L',
+        x: -98,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB265K',
+        x: -98,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB265J',
+        x: -98,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB263',
+        x: -29,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB262',
+        x: -29,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB261',
+        x: 75,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB259A',
+        x: 121,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB257',
+        x: 163,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB255',
+        x: 207,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB255B',
+        x: 231,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB255A',
+        x: 231,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB251',
+        x: 300,
+        y: 100,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB249D',
+        x: 300,
+        y: 100,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB249C',
+        x: 300,
+        y: 100,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB249B',
+        x: 300,
+        y: 100,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB249A',
+        x: 300,
+        y: 100,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB247A',
+        x: 300,
+        y: 45,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB247',
+        x: 300,
+        y: 45,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB245',
+        x: 300,
+        y: -22,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB241',
+        x: 300,
+        y: -90,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB239',
+        x: 300,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB231',
+        x: 206,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB229',
+        x: 206,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB227',
+        x: 159,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB225',
+        x: 103,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB223',
+        x: 50,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB221',
+        x: 50,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB218B',
+        x: -8,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB218',
+        x: -8,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB218A',
+        x: -8,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB216B',
+        x: -8,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB216A',
+        x: -8,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB216',
+        x: -8,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB214',
+        x: -122,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB214D',
+        x: -122,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB214C',
+        x: -122,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB214E',
+        x: -122,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB214B',
+        x: -122,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB214A',
+        x: -122,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB214F',
+        x: -122,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB214G',
+        x: -122,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB214H',
+        x: -122,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB214N',
+        x: -122,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB214M',
+        x: -122,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB214J',
+        x: -122,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB214L',
+        x: -122,
+        y: -140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB214K',
+        x: -219,
+        y: -131,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB212',
+        x: -219,
+        y: -131,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB208',
+        x: -219,
+        y: -131,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB210A',
+        x: -219,
+        y: -131,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB210',
+        x: -219,
+        y: -131,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB206',
+        x: -235,
+        y: -80,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB204',
+        x: -228,
+        y: -19,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB202',
+        x: -228,
+        y: -70,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB276',
+        x: -216,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB268',
+        x: -153,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB266',
+        x: -61,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB258',
+        x: 6,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB256',
+        x: 65,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB256F',
+        x: 65,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB256G',
+        x: 65,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB256A',
+        x: 65,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB256B',
+        x: 65,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB256C',
+        x: 65,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB256D',
+        x: 65,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB256E',
+        x: 65,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB254',
+        x: 120,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB252',
+        x: 190,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB250',
+        x: 239,
+        y: 116,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB248',
+        x: 239,
+        y: 57,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB242',
+        x: 239,
+        y: -52,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB226C',
+        x: 234,
+        y: -116,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB226D',
+        x: 234,
+        y: -116,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB226B',
+        x: 234,
+        y: -116,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB226E',
+        x: 234,
+        y: -116,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB226A',
+        x: 234,
+        y: -116,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB226F',
+        x: 234,
+        y: -116,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB224',
+        x: 234,
+        y: -116,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB222',
+        x: 220,
+        y: -122,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB222M',
+        x: 155,
+        y: -123,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB222L',
+        x: 155,
+        y: -123,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB222K',
+        x: 155,
+        y: -123,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB222J',
+        x: 155,
+        y: -123,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB222H',
+        x: 155,
+        y: -123,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB222G',
+        x: 155,
+        y: -123,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB222A',
+        x: 155,
+        y: -123,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB222B',
+        x: 155,
+        y: -123,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB222C',
+        x: 155,
+        y: -123,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB222D',
+        x: 155,
+        y: -123,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB222E',
+        x: 155,
+        y: -123,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB222F',
+        x: 155,
+        y: -123,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB220',
+        x: 69,
+        y: -123,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB218C',
+        x: 35,
+        y: -123,
+        scale: 2.5,
+        duration: 2000
+    },
 ];
 
-const mb_5_rooms = ['000', 'MB524', 'MB522', 'MB522A', 'MB528', 'MB511', 'MB509', 'MB567', 'MB565', 'MB563', 'MB561', 'MB561C', 'MB561B', 'MB561A', 'MB559',
-    'MB555A', 'MB557', 'MB555', 'MB553', 'MB551', 'MB549', 'MB548', 'MB548B', 'MB544N', 'MB548A', 'MB544L', 'MB544J', 'MB544G', 'MB544F', 'MB544E', 'MB544D', 'MB544C', 'MB544B', 'MB544A', 'MB541G', 'MB541',
-    'MB541F', 'MB541E', 'MB541D', 'MB541C', 'MB541B', 'MB541A', 'MB539A', 'MB539', 'MB536', 'MB534', 'MB532', 'MB530A', 'MB530', 'MB528', 'MB523', 'MB519', 'MB519A',
-    'MB517', 'MB512', 'MB510', 'MB508', 'MB506', 'MB504', 'MB502', 'MB576', 'MB574', 'MB568', 'MB566', 'MB564', 'MB560A', 'MB560B', 'MB560C', 'MB560D', 'MB556', 'MB554',
-    'MB552','MB550','MB547B','MB547A','MB547','MB545','MB543A','MB543','MB537','MB535','MB533A','MB533','MB531','MB525'
+const mb_3_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'MB3121A',
+        x: -50,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB321',
+        x: -50,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB313N',
+        x: -100,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB313P',
+        x: -100,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB313Q',
+        x: -100,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB313M',
+        x: -100,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB313L',
+        x: -100,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB313K',
+        x: -100,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB313J',
+        x: -156,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB313A',
+        x: -156,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB313B',
+        x: -156,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB313C',
+        x: -156,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB313D',
+        x: -156,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB313H',
+        x: -156,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB313G',
+        x: -156,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB313F',
+        x: -156,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB313E',
+        x: -156,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB311',
+        x: -222,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB309',
+        x: -292,
+        y: -33,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB307',
+        x: -292,
+        y: 27,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB373',
+        x: -162,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB371',
+        x: -77,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB369A',
+        x: -33,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB363A',
+        x: 45,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB363',
+        x: 45,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB361',
+        x: 89,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB361A',
+        x: 89,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB355F',
+        x: 89,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB355G',
+        x: 89,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB355H',
+        x: 89,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB355',
+        x: 157,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB355E',
+        x: 175,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB355D',
+        x: 175,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB355C',
+        x: 175,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB355B',
+        x: 207,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB355A',
+        x: 207,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB351',
+        x: 296,
+        y: 89,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB351B',
+        x: 296,
+        y: 89,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB351A',
+        x: 296,
+        y: 89,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB351C',
+        x: 296,
+        y: 89,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB347',
+        x: 301,
+        y: 6,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB343',
+        x: 301,
+        y: -73,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB341',
+        x: 301,
+        y: -73,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB341C',
+        x: 301,
+        y: -120,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB339A',
+        x: 301,
+        y: -120,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB339',
+        x: 301,
+        y: -120,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB337',
+        x: 301,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB331',
+        x: 227,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB329',
+        x: 169,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB329A',
+        x: 169,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB327',
+        x: 104,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB325A',
+        x: 52,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB324',
+        x: -30,
+        y: -121,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB316',
+        x: -62,
+        y: -121,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB314',
+        x: -147,
+        y: -118,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB314C',
+        x: -147,
+        y: -118,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB314D',
+        x: -147,
+        y: -118,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB314E',
+        x: -147,
+        y: -118,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB310J',
+        x: -147,
+        y: -118,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB310K',
+        x: -147,
+        y: -118,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB310L',
+        x: -147,
+        y: -118,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB310M',
+        x: -147,
+        y: -118,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB314B',
+        x: -147,
+        y: -118,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB314A',
+        x: -147,
+        y: -118,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB310H',
+        x: -147,
+        y: -118,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB310G',
+        x: -147,
+        y: -118,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB310F',
+        x: -147,
+        y: -118,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB310E',
+        x: -147,
+        y: -118,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB310',
+        x: -223,
+        y: -127,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB310C',
+        x: -230,
+        y: -89,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB310D',
+        x: -230,
+        y: -89,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB310B',
+        x: -230,
+        y: -89,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB310A',
+        x: -230,
+        y: -89,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB308',
+        x: -223,
+        y: -53,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB306',
+        x: -223,
+        y: 9,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB304',
+        x: -223,
+        y: 68,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB372',
+        x: -190,
+        y: 134,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB374',
+        x: -190,
+        y: 134,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB370',
+        x: -98,
+        y: 136,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB368',
+        x: -49,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB366',
+        x: -21,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB364',
+        x: 28,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB362',
+        x: 86,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB360',
+        x: 129,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB358A',
+        x: 156,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB358B',
+        x: 156,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB358C',
+        x: 156,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB358',
+        x: 193,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB358D',
+        x: 231,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB352',
+        x: 231,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB352A',
+        x: 231,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB350',
+        x: 241,
+        y: 69,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB348',
+        x: 241,
+        y: 69,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB346C',
+        x: 241,
+        y: 69,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB346A',
+        x: 238,
+        y: 27,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB346B',
+        x: 238,
+        y: 27,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB334B',
+        x: 243,
+        y: -47,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB334C',
+        x: 243,
+        y: -47,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB334A',
+        x: 243,
+        y: -47,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB334',
+        x: 243,
+        y: -107,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB332',
+        x: 243,
+        y: -107,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB330',
+        x: 226,
+        y: -126,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB328A',
+        x: 208,
+        y: -128,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB328B',
+        x: 208,
+        y: -128,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB328',
+        x: 132,
+        y: -128,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB326',
+        x: 35,
+        y: -135,
+        scale: 2.5,
+        duration: 2000
+    },
 ];
 
-const mb_6_rooms = ['000', 'MB677A', 'MB618', 'MB616', 'MB614', 'MB610', 'MB654A', 'MB654', 'MB652C', 'MB652B', 'MB652', 'MB649A', 'MB649', 'MB647', 'MB645', 'MB636G',
-    'MB636F', 'MB636E', 'MB636D', 'MB636C', 'MB636B', 'MB636A', 'MB634H', 'MB634G', 'MB634F', 'MB634E', 'MB634D', 'MB634C', 'MB634B', 'MB634A', 'MB626B', 'MB626A', 'MB626',
-    'MB624A', 'MB624', 'MB622', 'MB622A', 'MB623C', 'MB621B', 'MB621C', 'MB676', 'MB619', 'MB675', 'MB617', 'MB615', 'MB615A', 'MB613', 'MB613A', 'MB611', 'MB609G',
-    'MB609', 'ABS UG OFFICES', 'ABS', 'MB609F', 'MB609E', 'MB609D', 'MB609C', 'MB609B', 'MB609A', 'MB606', 'MB603', 'MB657', 'MB653', 'WRIGHT LECTURE THEATRE', 'WRIGHT LECTURE',
-    'MB651', 'SUMPNER LECTURE THEATRE', 'SUMPNER LECTURE', 'SUMPNER', 'WRIGHT', 'MB650', 'MB644', 'MB640B', 'MB640A', 'MB640C', 'MB640', 'MB640D', 'MB640E', 'MB640F', 'MB640G',
-    'MB640H', 'MB640I', 'MB691', 'MB640J', 'MB640K', 'MB640L', 'MB640M', 'MB640N', 'MB640P', 'MB637A', 'MB637', 'MB635', 'MB633', 'MB625D', 'MB631', 'MB629', 'MB627', 'MB625',
-    'MB625A','MB625B','MB625C','MB621A','MB621B','M621C'
+const mb_4_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'MB418B',
+        x: -83,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB418C',
+        x: -83,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB418',
+        x: -152,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB416',
+        x: -215,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB418A',
+        x: -215,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB407',
+        x: -288,
+        y: -30,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB405',
+        x: -296,
+        y: 19,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB486',
+        x: -239,
+        y: 149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB482',
+        x: -190,
+        y: 149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB480',
+        x: -148,
+        y: 149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB478',
+        x: -99,
+        y: 149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB476',
+        x: -50,
+        y: 149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB464A',
+        x: 33,
+        y: 149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB464B',
+        x: 33,
+        y: 149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB464C',
+        x: 33,
+        y: 149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB464D',
+        x: 33,
+        y: 149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB464',
+        x: 92,
+        y: 149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB462',
+        x: 149,
+        y: 149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB460A',
+        x: 207,
+        y: 149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB460B',
+        x: 207,
+        y: 149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB460C',
+        x: 207,
+        y: 149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB460D',
+        x: 207,
+        y: 149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB460G',
+        x: 207,
+        y: 149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB460F',
+        x: 207,
+        y: 149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB460E',
+        x: 207,
+        y: 149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB440',
+        x: 298,
+        y: 96,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438Q',
+        x: 298,
+        y: 53,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438P',
+        x: 298,
+        y: 53,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438N',
+        x: 298,
+        y: 53,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438M',
+        x: 298,
+        y: 53,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438L',
+        x: 298,
+        y: 53,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438R',
+        x: 298,
+        y: 53,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438S',
+        x: 298,
+        y: 53,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438T',
+        x: 298,
+        y: 53,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438U',
+        x: 298,
+        y: 53,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438V',
+        x: 298,
+        y: 53,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438',
+        x: 295,
+        y: -16,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438K',
+        x: 298,
+        y: -76,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438A',
+        x: 298,
+        y: -76,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438B',
+        x: 298,
+        y: -76,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438J',
+        x: 298,
+        y: -76,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438C',
+        x: 298,
+        y: -76,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438H',
+        x: 298,
+        y: -76,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438G',
+        x: 298,
+        y: -76,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438F',
+        x: 298,
+        y: -76,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438D',
+        x: 298,
+        y: -76,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB438E',
+        x: 298,
+        y: -76,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB436',
+        x: 298,
+        y: -143,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB434L',
+        x: 245,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB434M',
+        x: 211,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB434N',
+        x: 211,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB434P',
+        x: 211,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB434Q',
+        x: 211,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB434K',
+        x: 211,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB434J',
+        x: 211,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB434H',
+        x: 211,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB434G',
+        x: 211,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB434',
+        x: 168,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB434A',
+        x: 129,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB434B',
+        x: 129,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB434C',
+        x: 129,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB434F',
+        x: 129,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB434E',
+        x: 129,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB434D',
+        x: 129,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB432',
+        x: 93,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB430',
+        x: 61,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB419',
+        x: -13,
+        y: -144,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB417',
+        x: -119,
+        y: -144,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB411',
+        x: -208,
+        y: -144,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB413',
+        x: -208,
+        y: -144,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB408',
+        x: -231,
+        y: -99,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB406',
+        x: -231,
+        y: -46,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB404',
+        x: -231,
+        y: 17,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB402',
+        x: -231,
+        y: 84,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB479',
+        x: -228,
+        y: 126,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB477',
+        x: -181,
+        y: 116,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB473',
+        x: -108,
+        y: 123,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB471',
+        x: -41,
+        y: 125,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB469',
+        x: 7,
+        y: 118,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB469A',
+        x: 7,
+        y: 118,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB467A',
+        x: 7,
+        y: 118,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB467',
+        x: 45,
+        y: 122,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB463',
+        x: 114,
+        y: 129,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB461',
+        x: 194,
+        y: 120,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB459',
+        x: 233,
+        y: 114,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB459A',
+        x: 233,
+        y: 114,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB441',
+        x: 233,
+        y: 114,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB439E',
+        x: 238,
+        y: 69,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB439F',
+        x: 238,
+        y: 69,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB439D',
+        x: 238,
+        y: 69,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB439G',
+        x: 238,
+        y: 69,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB439C',
+        x: 238,
+        y: 69,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB439H',
+        x: 238,
+        y: 69,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB439B',
+        x: 238,
+        y: 69,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB439J',
+        x: 238,
+        y: 69,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB439A',
+        x: 238,
+        y: 69,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB439K',
+        x: 238,
+        y: 69,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB439L',
+        x: 238,
+        y: 69,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB431B',
+        x: 246,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB431',
+        x: 154,
+        y: -98,
+        scale: 1.7,
+        duration: 2000
+    },
+    {
+        name: 'MB431A',
+        x: 37,
+        y: -130,
+        scale: 1.7,
+        duration: 2000
+    },
 ];
 
-const mb_7_rooms = ['000', 'MB721', 'MB717A', 'MB717B', 'MB717C', 'MB715', 'MB711', 'MB717D', 'MB710', 'MB708', 'MB708B', 'MB708A', 'MB709', 'MB709A', 'MB706', 'MB705', 'MB707',
-    'MB704', 'MB703', 'MB702', 'MB777', 'MB775', 'MB776', 'MB774', 'MB772', 'MB770', 'MB768', 'MB766', 'MB758', 'MB756', 'MB754', 'MB752', 'MB750', 'MB748', 'MB742B', 'MB742A', 'MB740B',
-    'MB740A', 'MB738B', 'MB748A', 'MB738', 'MB736', 'MB734', 'MB732', 'MB732A', 'MB726', 'MB724', 'MB773', 'MB771', 'MB769', 'MB767', 'MB765', 'MB761', 'MB759', 'MB757', 'MB755', 'MB753',
-    'MB751', 'MB747', 'MB745', 'MB743', 'MB741', 'MB739', 'MB737', 'MB735A', 'MB735B', 'MB733A', 'MB733B', 'MB731', 'MB729', 'MB727'];
+const mb_5_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+{
+    name: 'MB524',
+    x: -43,
+    y: -148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB522',
+    x: -113,
+    y: -148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB522A',
+    x: -113,
+    y: -148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB518',
+    x: -189,
+    y: -148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB511',
+    x: -291,
+    y: -31,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB509',
+    x: -291,
+    y: 23,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB567',
+    x: -219,
+    y: 148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB565',
+    x: -175,
+    y: 148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB563',
+    x: -119,
+    y: 148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB561',
+    x: -63,
+    y: 148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB561C',
+    x: -63,
+    y: 148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB561B',
+    x: -63,
+    y: 148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB561A',
+    x: -63,
+    y: 148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB559',
+    x: 48,
+    y: 148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB555A',
+    x: 70,
+    y: 148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB557',
+    x: 70,
+    y: 148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB555',
+    x: 110,
+    y: 148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB553',
+    x: 141,
+    y: 148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB551',
+    x: 164,
+    y: 148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB549',
+    x: 192,
+    y: 148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB548',
+    x: 290,
+    y: 119,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB548B',
+    x: 290,
+    y: 119,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB544N',
+    x: 290,
+    y: 119,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB548A',
+    x: 290,
+    y: 119,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB544L',
+    x: 290,
+    y: 119,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB544J',
+    x: 290,
+    y: 119,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB544G',
+    x: 303,
+    y: 13,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB544F',
+    x: 303,
+    y: 13,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB544E',
+    x: 303,
+    y: 13,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB544C',
+    x: 303,
+    y: 13,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB544B',
+    x: 303,
+    y: 13,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB544A',
+    x: 303,
+    y: 13,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB541G',
+    x: 306,
+    y: -89,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB541',
+    x: 306,
+    y: -89,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB541A',
+    x: 306,
+    y: -89,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB541D',
+    x: 306,
+    y: -89,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB541C',
+    x: 306,
+    y: -89,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB539A',
+    x: 306,
+    y: -89,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB539',
+    x: 306,
+    y: -148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB536',
+    x: 223,
+    y: -148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB534',
+    x: 190,
+    y: -148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB532',
+    x: 134,
+    y: -148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB530A',
+    x: 92,
+    y: -148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB530',
+    x: 49,
+    y: -148,
+    scale: 2.5,
+    duration: 2000
+},
+{
+    name: 'MB528',
+    x: 49,
+    y: -148,
+    scale: 2.5,
+    duration: 2000
+    },
+    {
+        name: 'MB523',
+        x: -39,
+        y: -147,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB519',
+        x: -98,
+        y: -147,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB519A',
+        x: -146,
+        y: -147,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB517',
+        x: -193,
+        y: -147,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB512',
+        x: -229,
+        y: -69,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB510',
+        x: -226,
+        y: 9,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB508',
+        x: -226,
+        y: 9,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB506',
+        x: -232,
+        y: 69,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB504',
+        x: -232,
+        y: 69,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB502',
+        x: -226,
+        y: 116,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB576',
+        x: -226,
+        y: 116,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB574',
+        x: -175,
+        y: 124,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB568',
+        x: -123,
+        y: 133,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB566',
+        x: -123,
+        y: 133,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB564',
+        x: -67,
+        y: 133,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB560A',
+        x: -23,
+        y: 133,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB560B',
+        x: 5,
+        y: 134,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB560C',
+        x: 5,
+        y: 134,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB560D',
+        x: 5,
+        y: 134,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB556',
+        x: 43,
+        y: 138,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB554',
+        x: 90,
+        y: 138,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB552',
+        x: 136,
+        y: 138,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB550',
+        x: 190,
+        y: 138,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB547B',
+        x: 242,
+        y: 123,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB547A',
+        x: 242,
+        y: 123,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB547',
+        x: 255,
+        y: 108,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB545',
+        x: 244,
+        y: 103,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB543A',
+        x: 244,
+        y: 103,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB543',
+        x: 236,
+        y: 66,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB537',
+        x: 236,
+        y: -78,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB535',
+        x: 236,
+        y: -135,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB533A',
+        x: 236,
+        y: -135,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB533',
+        x: 236,
+        y: -135,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB531',
+        x: 139,
+        y: -139,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB525',
+        x: 35,
+        y: -139,
+        scale: 2.5,
+        duration: 2000
+    },
+];
 
-const nw_G_rooms = ['000', 'NWG30', 'NWG02', 'NWG03', 'NWG04', 'NWG06A', 'NWG06', 'NWG06B', 'NWG08', 'NWG20', 'NWG09', 'NWG07', 'NWG24'];
+const mb_6_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'MB677A',
+        x: -52,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB618',
+        x: -93,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB616',
+        x: -93,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB614',
+        x: -93,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB610',
+        x: -145,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB654A',
+        x: -171,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB654',
+        x: -171,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB652C',
+        x: -138,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB652B',
+        x: -83,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB652',
+        x: -37,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB649A',
+        x: 37,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB649',
+        x: 68,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB647',
+        x: 92,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB645',
+        x: 121,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB636G',
+        x: 290,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB636',
+        x: 290,
+        y: 86,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB634H',
+        x: 290,
+        y: 86,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB634G',
+        x: 290,
+        y: 36,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB634F',
+        x: 290,
+        y: 36,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB634E',
+        x: 290,
+        y: 36,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB634C',
+        x: 290,
+        y: -75,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB634B',
+        x: 290,
+        y: -112,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB634A',
+        x: 290,
+        y: -112,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB630',
+        x: 290,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB626B',
+        x: 139,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB626A',
+        x: 139,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB626',
+        x: 139,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB624A',
+        x: 86,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB624',
+        x: 86,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB622',
+        x: 86,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB622A',
+        x: 54,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB676',
+        x: -30,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB619',
+        x: -30,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB617',
+        x: -65,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB675',
+        x: -65,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB615',
+        x: -86,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB615A',
+        x: -86,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB613',
+        x: -86,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB613A',
+        x: -115,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB611',
+        x: -146,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB609G',
+        x: -186,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB609F',
+        x: -186,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB609E',
+        x: -186,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB609D',
+        x: -186,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB609',
+        x: -186,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'ABS UG OFFICES',
+        x: -186,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'UG OFFICES',
+        x: -186,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'STUDENT SUPPORT',
+        x: -228,
+        y: -119,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB609A',
+        x: -206,
+        y: -86,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB606',
+        x: -226,
+        y: -14,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB603',
+        x: -226,
+        y: 83,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB657',
+        x: -227,
+        y: 135,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB653',
+        x: -172,
+        y: 135,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'WRIGHT',
+        x: -172,
+        y: 135,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB651',
+        x: -71,
+        y: 135,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SUMPNER',
+        x: -71,
+        y: 135,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB650',
+        x: -4,
+        y: 107,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB644',
+        x: 76,
+        y: 123,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB640C',
+        x: 133,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB640A',
+        x: 133,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB640B',
+        x: 133,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB640',
+        x: 184,
+        y: 143,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB640D',
+        x: 184,
+        y: 143,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB640E',
+        x: 184,
+        y: 143,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB640F',
+        x: 184,
+        y: 143,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB640G',
+        x: 184,
+        y: 143,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB640P',
+        x: 184,
+        y: 143,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB640N',
+        x: 184,
+        y: 143,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB640M',
+        x: 184,
+        y: 143,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB640L',
+        x: 184,
+        y: 143,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB640K',
+        x: 230,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB640J',
+        x: 230,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB691',
+        x: 230,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB640I',
+        x: 230,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB640H',
+        x: 230,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB637A',
+        x: 237,
+        y: 64,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB635',
+        x: 237,
+        y: 64,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB633',
+        x: 237,
+        y: -80,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB625D',
+        x: 237,
+        y: -80,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB631',
+        x: 237,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB629',
+        x: 237,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB627',
+        x: 199,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB625',
+        x: 139,
+        y: -132,
+        scale: 2.2,
+        duration: 2000
+    },
+    {
+        name: 'MB625A',
+        x: 45,
+        y: -128,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB625B',
+        x: 45,
+        y: -128,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB625C',
+        x: 45,
+        y: -128,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB621A',
+        x: 45,
+        y: -128,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB621B',
+        x: 45,
+        y: -128,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB623C',
+        x: 45,
+        y: -128,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB621C',
+        x: 45,
+        y: -128,
+        scale: 2.5,
+        duration: 2000
+    },
+];
 
-const nw_1_rooms = ['000', 'NW102C', 'NW102A', 'NW102B', 'NW102D', 'NW102', 'NW104', 'NW104A', 'NW104B', 'NW109B', 'NW109', 'NW125', 'NW107', 'NW126', 'NW101C'];
+const mb_7_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'MB721',
+        x: -2.7,
+        y: -120,
+        scale: 1.1,
+        duration: 2000
+    },
+    {
+        name: 'MB715',
+        x: -169,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB717A',
+        x: -169,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB717B',
+        x: -169,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB717C',
+        x: -169,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB717D',
+        x: -169,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB711',
+        x: -169,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB710',
+        x: -192,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB708',
+        x: -226,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB708B',
+        x: -226,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB708A',
+        x: -226,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB709A',
+        x: -226,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB709',
+        x: -226,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB706',
+        x: -237,
+        y: -80,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB704',
+        x: -233,
+        y: -12,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB703',
+        x: -285,
+        y: -16,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB707',
+        x: -285,
+        y: -16,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB705',
+        x: -285,
+        y: -16,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB702',
+        x: -230,
+        y: 57,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB777',
+        x: -174,
+        y: 144,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB775',
+        x: -126,
+        y: 133,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB774',
+        x: -126,
+        y: 133,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB776',
+        x: -126,
+        y: 133,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB773',
+        x: -89,
+        y: 133,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB771',
+        x: -89,
+        y: 133,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB772',
+        x: -89,
+        y: 133,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB770',
+        x: -89,
+        y: 133,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB768',
+        x: -47,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB766',
+        x: -47,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB769',
+        x: -47,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB767',
+        x: -47,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB765',
+        x: -47,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB758',
+        x: 66,
+        y: 145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB759',
+        x: 66,
+        y: 145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB761',
+        x: 66,
+        y: 145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB756',
+        x: 106,
+        y: 145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB757',
+        x: 106,
+        y: 145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB755',
+        x: 138,
+        y: 145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB754',
+        x: 138,
+        y: 145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB752',
+        x: 138,
+        y: 145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB753',
+        x: 174,
+        y: 145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB750',
+        x: 174,
+        y: 145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB748',
+        x: 174,
+        y: 145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB751',
+        x: 205,
+        y: 137,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB747',
+        x: 225,
+        y: 105,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB742B',
+        x: 250,
+        y: 82,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB742A',
+        x: 250,
+        y: 82,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB745',
+        x: 250,
+        y: 82,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB740B',
+        x: 250,
+        y: 82,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB740A',
+        x: 250,
+        y: 82,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB738B',
+        x: 250,
+        y: 82,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB738A',
+        x: 250,
+        y: 82,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB743',
+        x: 250,
+        y: 82,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB741',
+        x: 250,
+        y: 82,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB739',
+        x: 250,
+        y: 82,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB737',
+        x: 247,
+        y: -83,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB738',
+        x: 247,
+        y: -83,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB736',
+        x: 247,
+        y: -83,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB734',
+        x: 247,
+        y: -83,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB732',
+        x: 247,
+        y: -83,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB732A',
+        x: 247,
+        y: -83,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB735A',
+        x: 247,
+        y: -83,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB735B',
+        x: 247,
+        y: -83,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB733A',
+        x: 247,
+        y: -83,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB733B',
+        x: 247,
+        y: -83,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB731',
+        x: 247,
+        y: -83,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB729',
+        x: 243,
+        y: -144,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB727',
+        x: 187,
+        y: -146,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB726',
+        x: 169,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MB724',
+        x: 112,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+];
 
-const nw_2_rooms = ['000', 'FINAL YEAR PROJECT LAB', 'FINAL YEAR', 'FINAL YEAR PROJECT', 'NW206', 'NW204', 'NW207', 'NW205', 'NW223', 'NW225', 'NW224', 'NW204', 'NW201', 'NW203A', 'NW203'];
+const nw_G_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'NWG02',
+        x: 70,
+        y: -239,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWG30',
+        x: 70,
+        y: -239,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWG03',
+        x: 88,
+        y: -181,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWG04',
+        x: 71,
+        y: -21,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWG06A',
+        x: 50,
+        y: 62,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWG06',
+        x: 65,
+        y: 131,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWG06B',
+        x: 72,
+        y: 207,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWG08',
+        x: 10,
+        y: 269,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWG20',
+        x: -31,
+        y: 206,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWG09',
+        x: -55,
+        y: 72,
+        scale: 2,
+        duration: 2000
+    },
+    {
+        name: 'NWG07',
+        x: -48,
+        y: -125,
+        scale: 2,
+        duration: 2000
+    },
+    {
+        name: 'NWG24',
+        x: -48,
+        y: -125,
+        scale: 2,
+        duration: 2000
+    },    
+];
 
-const nw_3_rooms = ['000', 'NW302', 'NW302A', 'NW304A', 'NW304B', 'NW306', 'NW308', 'NW310', 'NW312', 'NW316', 'NW318', 'NW320', 'NW322', 'NW324', 'NW324A', 'NW324B',
-    'NW317', 'NW315', 'NW313', 'NW311', 'NW309', 'NW332', 'NW333', 'NW303', 'NW301', 'NW303A'];
+const nw_1_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'NW102C',
+        x: 84,
+        y: -289.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW102A',
+        x: 84,
+        y: -289.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW102A',
+        x: 84,
+        y: -245,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW102D',
+        x: 84,
+        y: -179.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW102',
+        x: 84,
+        y: -127,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW104',
+        x: 84,
+        y: 52,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW104A',
+        x: 84,
+        y: 205,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW104B',
+        x: 56,
+        y: 300,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW109B',
+        x: -56,
+        y: 149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW109',
+        x: -53,
+        y: -12,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW125',
+        x: -53,
+        y: -146,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW126',
+        x: -53,
+        y: -146,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW107',
+        x: -24,
+        y: -159,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW101C',
+        x: -42,
+        y: -290,
+        scale: 2.5,
+        duration: 2000
+    },
+];
 
-const nw_4_rooms = ['000', 'NW401', 'NW403', 'NW434', 'NW433', 'NW409', 'NW411', 'NW413', 'NW415', 'NW417', 'NW419', 'NW421', 'NW423', 'NW425', 'NW406', 'NW406C', 'NW406B',
-    'NW406A', 'NW404', 'NW402'];
+const nw_2_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'FINAL YEAR',
+        x: 68,
+        y: -221,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'FINAL YEAR PROJECT',
+        x: 68,
+        y: -221,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'FINAL YEAR PROJECT LAB',
+        x: 68,
+        y: -221,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW206',
+        x: 89,
+        y: -123,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW207',
+        x: 56,
+        y: 311,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW205',
+        x: -57,
+        y: -112,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW223',
+        x: -52,
+        y: -162,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW224',
+        x: -52,
+        y: -162,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW225',
+        x: -17,
+        y: -117,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW203',
+        x: -83,
+        y: -257,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW203A',
+        x: -90,
+        y: -307,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW201',
+        x: -34,
+        y: -332,
+        scale: 2.5,
+        duration: 2000
+    },    
+];
 
-const nw_5_rooms = ['000', 'NW502', 'NW504A', 'NW504', 'NW508A', 'NW506', 'NW508', 'NW527', 'NW525', 'NW523', 'NW521', 'NW519', 'NW517', 'NW515', 'NW513', 'NW511', 'NW532', 'NW533', 'NW505', 'NW503'];
+const nw_3_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'NW302',
+        x: 64,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW302A',
+        x: 68,
+        y: -203.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW304A',
+        x: 71,
+        y: -136,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW304b',
+        x: 71,
+        y: -136,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW306',
+        x: 68,
+        y: -50,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW308',
+        x: 68,
+        y: -50,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW310',
+        x: 68,
+        y: 11,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW312',
+        x: 68,
+        y: 11,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW316',
+        x: 72,
+        y: 91,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW318',
+        x: 70,
+        y: 165,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW320',
+        x: 70,
+        y: 165,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW322',
+        x: 70,
+        y: 225,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW324',
+        x: 58,
+        y: 291,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW324A',
+        x: 76,
+        y: 323,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW324B',
+        x: 16,
+        y: 323,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW317',
+        x: -52,
+        y: 151,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW315',
+        x: -52,
+        y: 151,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW313',
+        x: -52,
+        y: 55,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW311',
+        x: -52,
+        y: 55,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW309',
+        x: -52,
+        y: -62,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW332',
+        x: -52,
+        y: -160,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW303',
+        x: -76,
+        y: -263,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW303A',
+        x: -84,
+        y: -323,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW301',
+        x: -24,
+        y: -320,
+        scale: 2.5,
+        duration: 2000
+    },
+];
 
-const nw_6_rooms = ['000', 'NW602', 'NW604', 'NW606', 'NW609', 'NW608A', 'NW608B', 'NW208D', 'NW608C', 'NW610', 'NW612', 'NW614', 'NW616', 'NW618', 'NW621',
-    'NW619', 'NW617', 'NW615A', 'NW615', 'NW613', 'NW611', 'NW609', 'NW629', 'NW630', 'NW601'];
+const nw_4_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'NW402',
+        x: 68,
+        y: -191,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW404',
+        x: 60,
+        y: -46,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW406C',
+        x: 84.5,
+        y: 8,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW406B',
+        x: 38.5,
+        y: -15,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW406A',
+        x: 11,
+        y: -6,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW406',
+        x: 53,
+        y: 203,
+        scale: 1.5,
+        duration: 2000
+    },
+    {
+        name: 'NW425',
+        x: -65,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW423',
+        x: -65,
+        y: 148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW421',
+        x: -65,
+        y: 89,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW419',
+        x: -65,
+        y: 89,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW417',
+        x: -65,
+        y: 13,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW415',
+        x: -65,
+        y: 13,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW413',
+        x: -65,
+        y: 64,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW411',
+        x: -65,
+        y: 64,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW409',
+        x: -57,
+        y: -139,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW433',
+        x: -57,
+        y: -139,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW434',
+        x: -53,
+        y: -166,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW403',
+        x: -78,
+        y: -266,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW401',
+        x: -54,
+        y: -322,
+        scale: 2.5,
+        duration: 2000
+    },
+];
 
-const nw_7_rooms = ['000', 'NW702', 'NW704', 'NW706', 'NW708', 'NW710', 'NW712', 'NW714', 'NW714A', 'NW715', 'NW713', 'NW711', 'NW709', 'NW707A', 'NW707', 'NW722', 'NW723', 'NW701A', 'NW701'];
+const nw_5_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'NW502',
+        x: 68,
+        y: -195,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW504A',
+        x: 52,
+        y: -78,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW504',
+        x: 52,
+        y: -6,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW508A',
+        x: 77,
+        y: 75,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW506',
+        x: 24,
+        y: 79,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW508',
+        x: 51,
+        y: 236,
+        scale: 1.9,
+        duration: 2000
+    },
+    {
+        name: 'NW527',
+        x: -71,
+        y: 139,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW525',
+        x: -71,
+        y: 139,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW523',
+        x: -70,
+        y: 62,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW521',
+        x: -70,
+        y: 62,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW519',
+        x: -68,
+        y: -12,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW517',
+        x: -68,
+        y: -12,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW515',
+        x: -61,
+        y: -77,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW513',
+        x: -61,
+        y: -77,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW511',
+        x: -56,
+        y: -142,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW532',
+        x: -56,
+        y: -142,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW533',
+        x: -45,
+        y: -177,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW505',
+        x: -69,
+        y: -310,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW503',
+        x: -13,
+        y: -323,
+        scale: 2.5,
+        duration: 2000
+    },
+];
 
-const nw_8_rooms = ['000', 'NW802A', 'NW802', 'NW802C', 'NW802D', 'NW804', 'NW806', 'NW808', 'NW810', 'N812', 'NW814', 'NW816', 'NW816A', 'NW818', 'NW820A', 'NW820B', 'NW820C', 'NW820D',
-    'NW820E', 'NW820F', 'NW820G', 'NW820H', 'NW820J', 'NW811', 'NW809C', 'NW809', 'NW809B', 'NW809A', 'NW807', 'NW805', 'NW859', 'NW858', 'NW803', 'NW801', 'NW803A'];
+const nw_6_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'NW602',
+        x: 67,
+        y: -309,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW604',
+        x: 67,
+        y: -223,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW606',
+        x: 67,
+        y: -110,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW609',
+        x: 67,
+        y: -31.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW608D',
+        x: 20,
+        y: 54.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW608A',
+        x: 58,
+        y: 107,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW608C',
+        x: 88,
+        y: 167,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW608B',
+        x: 47,
+        y: 162,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW610',
+        x: 87,
+        y: 236,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW612',
+        x: 84,
+        y: 295,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW614',
+        x:54,
+        y: 323,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW616',
+        x: 21,
+        y: 265,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW618',
+        x: 21,
+        y: 265,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW621',
+        x: -72,
+        y: 113,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW619',
+        x: -72,
+        y: 113,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW617',
+        x: -72,
+        y: 113,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW615A',
+        x: -72,
+        y: 30,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW615',
+        x: -72,
+        y: 30,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW613',
+        x: -72,
+        y: -51,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW611',
+        x: -72,
+        y: -51,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW609',
+        x: -63,
+        y: -135,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW629',
+        x: -61,
+        y: -146,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW630',
+        x: -55,
+        y: -164,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW601',
+        x: -57,
+        y: 282,
+        scale: 2.5,
+        duration: 2000
+    },
+];
 
-const nw_9_rooms = ['000', 'NW902', 'NW904', 'NW906', 'NW908', 'NW910', 'NW912', 'NW914', 'NW916', 'NW918', 'NW918A', 'NW920', 'NW920A', 'NW922A', 'NW922B', 'NW922C', 'NW922D',
-    'NW922E', 'NW922F', 'NW922G', 'NW922H', 'NW923', 'NW921', 'NW919', 'NW917', 'NW915', 'NW913A', 'NW913', 'NW911', 'NW959', 'NW905', 'NW901', 'NW903'];
+const nw_7_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'NW702',
+        x: 64,
+        y: -271,
+        scale: 2.5,
+        duration: 0
+    },
+    {
+        name: 'NW704',
+        x: 64,
+        y: -271,
+        scale: 2.5,
+        duration: 0
+    },
+    {
+        name: 'NW706',
+        x: 66,
+        y: -197,
+        scale: 2.5,
+        duration: 0
+    },
+    {
+        name: 'NW708',
+        x: 71,
+        y: -105,
+        scale: 2.5,
+        duration: 0
+    },
+    {
+        name: 'NW710',
+        x: 73,
+        y: -17,
+        scale: 2.5,
+        duration: 0
+    },
+    {
+        name: 'NW712',
+        x: 62,
+        y: 154,
+        scale: 1.8,
+        duration: 0
+    },
+    {
+        name: 'NW714',
+        x: 60,
+        y: 323,
+        scale: 2.5,
+        duration: 0
+    },
+    {
+        name: 'NW714A',
+        x: 32,
+        y: 323,
+        scale: 2.5,
+        duration: 0
+    },
+    {
+        name: 'NW715',
+        x: -69,
+        y: 123,
+        scale: 2.5,
+        duration: 0
+    },
+    {
+        name: 'NW713',
+        x: -71,
+        y: 27,
+        scale: 2.5,
+        duration: 0
+    },
+    {
+        name: 'NW711',
+        x: -71,
+        y: 27,
+        scale: 2.5,
+        duration: 0
+    },
+    {
+        name: 'NW709',
+        x: -67,
+        y: -68,
+        scale: 2.5,
+        duration: 0
+    },
+    {
+        name: 'NW707A',
+        x: -67,
+        y: -68,
+        scale: 2.5,
+        duration: 0
+    },
+    {
+        name: 'NW703',
+        x: -67,
+        y: -1119,
+        scale: 2.5,
+        duration: 0
+    },
+    {
+        name: 'NW722',
+        x: -63,
+        y: -146,
+        scale: 2.5,
+        duration: 0
+    },
+    {
+        name: 'NW723',
+        x: -63,
+        y: -146,
+        scale: 2.5,
+        duration: 0
+    },
+    {
+        name: 'NW701A',
+        x: -62,
+        y: -250,
+        scale: 2.5,
+        duration: 0
+    },
+    {
+        name: 'NW701',
+        x: -52,
+        y: -320,
+        scale: 2.5,
+        duration: 0
+    },
+];
 
-const nw_10_rooms = ['000', 'NWX02', 'NWX04', 'NWX04A', 'NWX06A', 'NWX06B', 'NWX08', 'NWX10', 'NWX12', 'NWX14', 'NWX16', 'NWX17', 'NWX15', 'NWX13', 'NWX11', 'NWX09', 'NWX57', 'NWX56', 'NWX03','NWX01A', 'NWX01' ];
+const nw_8_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'NW802A',
+        x: 63,
+        y: -300,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW802',
+        x: 63,
+        y: -227,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW802C',
+        x: 63,
+        y: -227,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW802D',
+        x: 63,
+        y: -149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW804',
+        x: 63,
+        y: -149,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW806',
+        x: 63,
+        y: -53,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW808',
+        x: 63,
+        y: -53,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW810',
+        x: 63,
+        y: -9,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW812',
+        x: 63,
+        y: 30,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW814',
+        x: 63,
+        y: 50,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW816',
+        x: 63,
+        y: 87,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW816A',
+        x: 63,
+        y: 140,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW818',
+        x: 63,
+        y: 178,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW820A',
+        x: 100,
+        y: 202,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW820B',
+        x: 100,
+        y: 265,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW820C',
+        x: 100,
+        y: 265,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW820D',
+        x: 100,
+        y: 320,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW820E',
+        x: 100,
+        y: 320,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW820F',
+        x: 23,
+        y: 320,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW820G',
+        x: 23,
+        y: 320,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW820H',
+        x: 23,
+        y: 262,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW820J',
+        x: 23,
+        y: 262,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW811',
+        x: -30,
+        y: 167,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW809C',
+        x: -65,
+        y: 156,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW809B',
+        x: -74,
+        y: 112,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW809A',
+        x: -74,
+        y: 112,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW809',
+        x: -27,
+        y: 114,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW807',
+        x: -51,
+        y: 52,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW805',
+        x: -51,
+        y: -73,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW859',
+        x: -49,
+        y: -166,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW858',
+        x: -49,
+        y: -166,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW803',
+        x: -80,
+        y: -284,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW803A',
+        x: -90,
+        y: 323,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW801',
+        x: -36,
+        y: 323,
+        scale: 2.5,
+        duration: 2000
+    },
+];
 
-const sw_G_rooms = ['000', 'MAIN RECEPTION', 'SWG07','SWG23A', 'SWG23', 'SWG23B', 'SWG24', 'SWG25A', 'SWG26', 'SWG28', 'SWG29', 'SWG30', 'SWG12A', 'SWG12', 'MAIN ENTRANCE', 'ENTRANCE' ];
+const nw_9_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'NW902',
+        x: 68,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW904',
+        x: 68,
+        y: -194,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW906',
+        x: 68,
+        y: -194,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW908',
+        x: 80,
+        y: -132,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW910',
+        x: 80,
+        y: -132,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW912',
+        x: 80,
+        y: -65,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW914',
+        x: 80,
+        y: -65,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW914A',
+        x: 80,
+        y: 5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW916',
+        x: 80,
+        y: 5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW918',
+        x: 66,
+        y: 80,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW918A',
+        x: 66,
+        y: 80,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW920',
+        x: 62,
+        y: 147,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW920A',
+        x: 62,
+        y: 147,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW922A',
+        x: 64,
+        y: 211,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW922B',
+        x: 94,
+        y: 256,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW922C',
+        x: 94,
+        y: 256,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW922D',
+        x: 92,
+        y: 323,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW922E',
+        x: 92,
+        y: 323,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW922F',
+        x: 20,
+        y: 323,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW922G',
+        x: 20,
+        y: 292,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW922H',
+        x: 20,
+        y: 292,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW923',
+        x: -55,
+        y: 143,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW921',
+        x: -55,
+        y: 143,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW919',
+        x: -55,
+        y: 84,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW917',
+        x: -55,
+        y: 53,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW915',
+        x: -71,
+        y: 2,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW913A',
+        x: -71,
+        y: 2,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW913',
+        x: -71,
+        y: -45,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW911',
+        x: -71,
+        y: -102,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW959',
+        x: -61,
+        y: -161,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW905',
+        x: -77,
+        y: -268,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW903',
+        x: -84,
+        y: -322,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NW901',
+        x: -37,
+        y: -322,
+        scale: 2.5,
+        duration: 2000
+    },
+];
 
-const sw_1_rooms = ['000', 'PLACEMENT', 'PLACEMENT TEAM', 'PLACEMENT OFFICE', 'SW103', 'SW105', 'SW107', 'SW111', 'SW120', 'SW118', 'SW116', 'SW114', 'SW112', 'SW110', 'SW108', 'SW106', 'SW109',
-    'SW109A', 'SW106A', 'SW138'];
+const nw_10_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'NWX02',
+        x: 66,
+        y: -254,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWX04A',
+        x: 38,
+        y: -198,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWX04',
+        x: 63,
+        y: -177,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWX06A',
+        x: 66,
+        y: -73,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWX06B',
+        x: 69,
+        y: 82,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWX08',
+        x: 69,
+        y: 170,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWX10',
+        x: 69,
+        y: 170,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWX12',
+        x: 69,
+        y: 206,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWX14',
+        x: 39,
+        y: 213,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWX16',
+        x: 54,
+        y: 297,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWX17',
+        x: -56,
+        y: 135,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWX15',
+        x: -54,
+        y: 64,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWX13',
+        x: -51,
+        y: 4,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWX11',
+        x: -51,
+        y: -72,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWX09',
+        x: -51,
+        y: -138,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWX57',
+        x: -51,
+        y: -138,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWX56',
+        x: -51,
+        y: -138,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWX03',
+        x: -78,
+        y: -253,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWX01A',
+        x: -83,
+        y: -299,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'NWX01',
+        x: -33,
+        y: -323,
+        scale: 2.5,
+        duration: 2000
+    },
+];
 
-const sw_2_rooms = ['000', 'SW207', 'SW211', 'SW213', 'DIGITAL MARKET', 'DIGITAL MARKETING', 'S214', 'PR', 'PR, GRAPHIC DESIGN', 'PR, GRAPHIC DESIGN, PUBLICATIONS AND EVENTS', 'GRAPHIC DESIGN',
-    'PUBLICATIONS AND EVENTS', 'S212', 'INTERNATIONAL OFFICE', 'INTERNATIONAL', 'SW210', 'MARKET RESEARCH', 'SCHOOLS AND LIASION', 'LIASION', 'SW208', 'SW206C', 'SW226'];
+const sw_G_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+}, {
+        name: 'SWG07',
+        x: 13.5,
+        y: 93,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWG23A',
+        x: -1.5,
+        y: -131.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWG23B',
+        x: -1.5,
+        y: -131.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWG23',
+        x: 31,
+        y: -199,
+        scale: 2.1,
+        duration: 2000
+    },
+    {
+        name: 'SWG26',
+        x: 8.1,
+        y: -254,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWG26A',
+        x: 8.1,
+        y: -254,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWG28',
+        x: 140,
+        y: -261,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWG29',
+        x: 181,
+        y: -197.5,
+        scale: 1.65,
+        duration: 2000
+    },
+    {
+        name: 'SWG30',
+        x: 187,
+        y: 86.75,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWG12',
+        x: 145.5,
+        y: 107.25,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MAIN RECEPTION',
+        x: 11.2,
+        y: 162.2,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'ENTRANCE',
+        x: -130,
+        y: 173,
+        scale: 1.25,
+        duration: 2000
+    },
+    {
+        name: 'MAIN ENTRANCE',
+        x: -130,
+        y: 173,
+        scale: 1.25,
+        duration: 2000
+    },
+];
 
-const sw_3_rooms = ['000', 'SW305', 'SW305A', 'SW309', 'SW309A', 'SW312G', 'SW310', 'SW312D', 'SW312D', 'SW308', 'SW304A', 'SW312'];
+const sw_1_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'SW103',
+        x: 8.5,
+        y: 79,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW105',
+        x: 8.5,
+        y: 79,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW107',
+        x: 12,
+        y: 2.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW111',
+        x: -10,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW120',
+        x: 191,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW118',
+        x: 191,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW116',
+        x: 191,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW114',
+        x: 191,
+        y: -240,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW112',
+        x: 191,
+        y: -160,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW110',
+        x: 191,
+        y: -160,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW109A',
+        x: 191,
+        y: -80,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW108',
+        x: 191,
+        y: -18,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW106',
+        x: 191,
+        y: 79.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW106A',
+        x: 191,
+        y: 79.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW138',
+        x: 191,
+        y: 79.5,
+        scale: 2.5,
+        duration: 2000
+    },
+];
 
-const sw_4_rooms = ['000', 'SW405', 'SW407', 'SW407A', 'SW409', 'SW409A', 'SW411', 'SW413', 'SW414A', 'SW415', 'SW417', 'SW419', 'SW414', 'SW414A', 'SW414B', 'SW414C',
-    'SW410', 'SW410H', 'SW410G', 'SW410F', 'SW410E', 'SW410D', 'SW410C', 'SW410B', 'SW410A', 'SW408', 'SW406', 'SW408A'];
+const sw_2_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+}, {
+        name: 'SW207',
+        x: 12.5,
+        y: 95,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW211',
+        x: 12.5,
+        y: -7.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW213',
+        x: 12.5,
+        y: -73.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW214',
+        x: 12.5,
+        y: -204.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'DIGITAL MARKET',
+        x: 12.5,
+        y: -204.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'DIGITAL MARKETING',
+        x: 12.5,
+        y: -204.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'DIGITAL MARKETING',
+        x: 12.5,
+        y: -204.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'PR',
+        x: 167,
+        y: -235,
+        scale: 1.9,
+        duration: 2000
+    },
+    {
+        name: 'PR, GRAPHIC DESIGN',
+        x: 167,
+        y: -235,
+        scale: 1.9,
+        duration: 2000
+    },
+    {
+        name: 'PR, GRAPHIC DESIGN, PUBLICATIONS AND EVENTS',
+        x: 167,
+        y: -235,
+        scale: 1.9,
+        duration: 2000
+    },
+    {
+        name: 'GRAPHIC DESIGN',
+        x: 167,
+        y: -235,
+        scale: 1.9,
+        duration: 2000
+    },
+    {
+        name: 'PUBLICATIONS AND EVENTS',
+        x: 167,
+        y: -235,
+        scale: 1.9,
+        duration: 2000
+    },
+    {
+        name: 'S212',
+        x: 167,
+        y: -235,
+        scale: 1.9,
+        duration: 2000
+    },
+    {
+        name: 'S210',
+        x: 167,
+        y: -65,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'INTERNATIONAL',
+        x: 167,
+        y: -65,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'INTERNATIONAL OFFICE',
+        x: 167,
+        y: -65,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SCHOOLS AND LIASION',
+        x: 167,
+        y: 39.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'LIASION',
+        x: 167,
+        y: 39.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW208',
+        x: 167,
+        y: 39.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'MARKET RESEARCH',
+        x: 167,
+        y: 50,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW206C',
+        x: 128,
+        y: 83.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW226',
+        x: 146,
+        y: 215.5,
+        scale: 2.5,
+        duration: 2000
+    },
+];
 
-const sw_5_rooms = ['000', 'SW505', 'SW507C', 'SW507B', 'SW507A', 'SW509A', 'SW509B', 'SW509C', 'SW511', 'SW511A', 'SW510B', 'SW510C', 'SW510D', 'SW510E', 'SW510', 'SW510A',
-    'SW508D', 'SW508H', 'SW508', 'SW508G', 'SW508B', 'SW508A', 'SW508F', 'SW508E', 'SW508C', 'SW506A', 'SW506B', 'SW508', 'SW504'];
+const sw_3_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'SW305',
+        x: 12,
+        y: 104.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW305A',
+        x: 0,
+        y: -10,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW309',
+        x: 10,
+        y: -131,
+        scale: 2,
+        duration: 2000
+    },
+    {
+        name: 'SW309A',
+        x: -7.7,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW312G',
+        x: 145,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW310',
+        x: 166,
+        y: -252,
+        scale: 2.2,
+        duration: 2000
+    },
+    {
+        name: 'SW312B',
+        x: 207,
+        y: -125,
+        scale: 2.2,
+        duration: 2000
+    },
+    {
+        name: 'SW312D',
+        x: 129.5,
+        y: -125,
+        scale: 2.2,
+        duration: 2000
+    },
+    {
+        name: 'SW308',
+        x: 164.5,
+        y: -57,
+        scale: 2.2,
+        duration: 2000
+    },
+    {
+        name: 'SW304A',
+        x: 163.5,
+        y: 46,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW304A',
+        x: 163.5,
+        y: 46,
+        scale: 2.5,
+        duration: 2000
+    },
+];
 
-const sw_6_rooms = ['000', 'SW603', 'SW605A', 'SW605', 'SW607', 'SW609', 'SW609B', 'SW609C', 'SW611', 'SW613', 'SW615C', 'SW615A', 'SW615B', 'SW620C', 'SW620B', 'SW620A', 'SW618',
-    'SW616', 'SW614', 'SW612', 'SW612A', 'SW612B', 'SW610A', 'SW610B', 'SW608', 'SW604'];
+const sw_4_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'SW405',
+        x: 14.5,
+        y: 161,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW405',
+        x: 14.5,
+        y: 161,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW407',
+        x: 14.5,
+        y: 131,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW407A',
+        x: 14.5,
+        y: 66,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW409',
+        x: 14.5,
+        y: 13.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW409A',
+        x: 14.5,
+        y: 13.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW411',
+        x: 14.5,
+        y: -30,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW413',
+        x: 14.5,
+        y: -79.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW414A',
+        x: 14.5,
+        y: -79.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW415',
+        x: 14.5,
+        y: -138,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW417',
+        x: 14.5,
+        y: -175,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW419',
+        x: 14.5,
+        y: -244,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW414A',
+        x: 125,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW414',
+        x: 167,
+        y: -262,
+        scale: 2.2,
+        duration: 2000
+    },
+    {
+        name: 'SW414B',
+        x: 207,
+        y: -280,
+        scale: 2.2,
+        duration: 2000
+    },
+    {
+        name: 'SW414C',
+        x: 189,
+        y: -251,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW410D',
+        x: 203,
+        y: -165,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW410C',
+        x: 203,
+        y: -165,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW410B',
+        x: 131,
+        y: -165,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW410A',
+        x: 131,
+        y: -165,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW410H',
+        x: 131,
+        y: -75,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW410G',
+        x: 131,
+        y: -75,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW410F',
+        x: 203,
+        y: -75,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW410E',
+        x: 203,
+        y: -75,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW408',
+        x: 165.5,
+        y: 33,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW408A',
+        x: 191,
+        y: 82,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW406',
+        x: 126.5,
+        y: 75.5,
+        scale: 2.5,
+        duration: 2000
+    },
+];
 
-const sw_7_rooms = ['000', 'SW701', 'SW703', 'SW705', 'SW707', 'SW709', 'SW711', 'SW713', 'SW715', 'SW717', 'SW719', 'SW724', 'SW722', 'SW720', 'SW716', 'SW714', 'SW712', 'SW710', 'SW708', 'SW705', 'SW704'];
+const sw_5_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'SW505',
+        x: 11,
+        y: 110,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW507C',
+        x: -10,
+        y: 34.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW507B',
+        x: -10,
+        y: 34.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW507A',
+        x: 13,
+        y: -31.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW509A',
+        x: 7,
+        y: -99.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW509B',
+        x: 7,
+        y: -99.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW509C',
+        x: 15,
+        y: -190,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW511',
+        x: 15,
+        y: -190,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW511A',
+        x: 15,
+        y: -268,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW510C',
+        x: 135,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW510D',
+        x: 178.5,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW510E',
+        x: 209,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW510B',
+        x: 173.5,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW510A',
+        x: 183.5,
+        y: -255,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW510',
+        x: 125.5,
+        y: -261,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW508D',
+        x: 165,
+        y: -206,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW508H',
+        x: 165,
+        y: -206,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW508B',
+        x: 165,
+        y: -155,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW508G',
+        x: 165,
+        y: -155,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW508A',
+        x: 165,
+        y: -90,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW508F',
+        x: 165,
+        y: -90,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW508',
+        x: 165,
+        y: -90,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW508E',
+        x: 165,
+        y: -90,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW506A',
+        x: 165,
+        y: -10,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW506B',
+        x: 165,
+        y: -10,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW506',
+        x: 165,
+        y: 75,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW504',
+        x: 112,
+        y: 120,
+        scale: 2.5,
+        duration: 2000
+    },
+]
 
-const sw_8_rooms = ['000', 'SW802A', 'SW802', 'SW804', 'SW805', 'SW808', 'SW807', 'SW809', 'SW810', 'SW811', 'SW812', 'SW813', 'SW814', 'SW815', 'SW816', 'SW817', 'SW818',
-    'SW819', 'SW820', 'SW821', 'SW822', 'SW823', 'SW840', 'SW841', 'SW842'];
+const sw_6_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'SW603',
+        x: 10,
+        y: 163.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW605A',
+        x: 10,
+        y: 163.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW605',
+        x: 10,
+        y: 123.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW607',
+        x: 10,
+        y: 78,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW609',
+        x: 10,
+        y: 78,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW609B',
+        x: 10,
+        y: -13.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW609C',
+        x: 10,
+        y: -13.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW611',
+        x: 10,
+        y: -90,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW613',
+        x: 10,
+        y: -90,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW615C',
+        x: 10,
+        y: -195,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW615A',
+        x: 10,
+        y: -195,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW615B',
+        x: 10,
+        y: -275,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW620C',
+        x: 130,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW620B',
+        x: 191,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW620A',
+        x: 191,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW618',
+        x: 164,
+        y: -192,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW616',
+        x: 164,
+        y: -192,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW614',
+        x: 164,
+        y: -121,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW612A',
+        x: 164,
+        y: -106,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW612',
+        x: 120,
+        y: -100,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW610A',
+        x: 165,
+        y: -15,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW610B',
+        x: 172,
+        y: 66,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW608',
+        x: 162,
+        y: 83,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW604',
+        x: 114,
+        y: 115,
+        scale: 2.5,
+        duration: 2000
+    },
+];
 
-const sw_9_rooms = ['000', 'SW905A', 'SW905B', 'SW907A', 'SW907B', 'SW909', 'SW909B', 'SW911A', 'SW911B', 'SW911C', 'SW911D', 'SW920B', 'SW920C', 'SW920', 'SW918A', 'SW918',
-    'SW916', 'SW914', 'SW912', 'SW910', 'SW908', 'SW906'];
+const sw_7_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'SW701',
+        x: 14.5,
+        y: 125,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW703',
+        x: 14.5,
+        y: 125,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW705',
+        x: 14.5,
+        y: 29,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW707',
+        x: 14.5,
+        y: 29,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW709',
+        x: 14.5,
+        y: -64,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW711',
+        x: 14.5,
+        y: -64,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW713',
+        x: 14.5,
+        y: -176,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW715',
+        x: 14.5,
+        y: -176,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW717',
+        x: 5.5,
+        y: -258,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW719',
+        x: 5.5,
+        y: -258,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW724',
+        x: 175,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW722',
+        x: 175,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW720',
+        x: 175,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW716',
+        x: 165,
+        y: -187,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW714',
+        x: 165,
+        y: -187,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW712',
+        x: 165,
+        y: -122,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW710',
+        x: 165,
+        y: -122,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW708',
+        x: 165,
+        y: -25,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW706',
+        x: 165,
+        y: -25,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW704',
+        x: 165,
+        y: 58,
+        scale: 2.5,
+        duration: 2000
+    },
+];
 
-const sw_10_rooms = ['000', 'SWX05', 'SWX07', 'SWX09', 'SWX11', 'SWX13', 'SWX13B', 'SWX15', 'SWX17', 'SWX19', 'SWX21', 'SWX23', 'SWX20C', 'SWX20B', 'SWX20A', 'SWX18',
-    'SWX16', 'SWX14', 'SWX12', 'SWX10', 'SWX08'];
+const sw_8_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'SW802',
+        x: 10,
+        y: 117,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW802A',
+        x: 10,
+        y: 117,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW804',
+        x: 10,
+        y: 12.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW805',
+        x: 10,
+        y: -69,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW807',
+        x: 10,
+        y: -145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW808',
+        x: 52,
+        y: -155,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW809',
+        x: -4,
+        y: -196,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW810',
+        x: 45,
+        y: -224,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW811',
+        x: -3,
+        y: -265,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW812',
+        x: 9,
+        y: -281,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW813',
+        x: 176,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW814',
+        x: 199,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW815',
+        x: 199,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW816',
+        x: 199,
+        y: -200,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW817',
+        x: 199,
+        y: -200,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW818',
+        x: 199,
+        y: -102,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW819',
+        x: 199,
+        y: -102,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW820',
+        x: 199,
+        y: -18,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW821',
+        x: 199,
+        y: -18,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW823',
+        x: 199,
+        y: -66,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW840',
+        x: 124,
+        y: -6,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW841',
+        x: 124,
+        y: -6,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW842',
+        x: 124,
+        y: -168,
+        scale: 2.5,
+        duration: 2000
+    },
+];
 
-const sw_11_rooms = ['000', 'SWE25', 'SWE27', 'SWE26', 'SWE09', 'SWE08', 'SWE07', 'SWE06', 'SWE05', 'SWE04', 'SWE14', 'SWE13', 'SWE12', 'SWE11', 'SWE03', 'SWE02',
-    'SWE01', 'SWE10', 'SWE24', 'SWE23', 'SWE10C', 'SWE10B'];
+const sw_9_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'SW905A',
+        x: 14,
+        y: 145,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW905B',
+        x: 7,
+        y: 94.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW907A',
+        x: 14,
+        y: 35.2,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW907B',
+        x: 14,
+        y: -40.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW909',
+        x: 14,
+        y: -40.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW911A',
+        x: 14,
+        y: -143.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW911B',
+        x: 14,
+        y: -143.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW911C',
+        x: 14,
+        y: -242.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW911D',
+        x: 14,
+        y: -242.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW920C',
+        x: 120,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW920B',
+        x: 170,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW920',
+        x: 170,
+        y: -253,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW918A',
+        x: 123,
+        y: -182,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW918',
+        x: 196,
+        y: -183,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW916',
+        x: 168,
+        y: -114,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW914',
+        x: 168,
+        y: -114,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW912',
+        x: 168,
+        y: -29.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW910',
+        x: 168,
+        y: -29.5,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW908',
+        x: 168,
+        y: 55,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SW906',
+        x: 168,
+        y: 55,
+        scale: 2.5,
+        duration: 2000
+    },
+];
+
+const sw_10_rooms =  [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'SWX05',
+        x: 8.6,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWX07',
+        x: 8.6,
+        y: 130,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWX09',
+        x: 8.6,
+        y: 57,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWX11',
+        x: 8.6,
+        y: 57,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWX13',
+        x: 8.6,
+        y: -36,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWX13B',
+        x: 8.6,
+        y: -36,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWX15',
+        x: 8.6,
+        y: -113,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWX17',
+        x: 8.6,
+        y: -113,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWX19',
+        x: 8.6,
+        y: -205,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWX21',
+        x: 8.6,
+        y: -205,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWX23',
+        x: 8.6,
+        y: -275,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWX20C',
+        x: 187.5,
+        y: -278,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWX20B',
+        x: 187.5,
+        y: -278,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWX20A',
+        x: 187.5,
+        y: -233,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWX16',
+        x: 164,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWX18',
+        x: 164,
+        y: -148,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWX14',
+        x: 164,
+        y: -61,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWX12',
+        x: 164,
+        y: -61,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWX10',
+        x: 164,
+        y: 39,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWX08',
+        x: 164,
+        y: 39,
+        scale: 2.5,
+        duration: 2000
+    },
+];
+
+const sw_11_rooms = [{
+    name: '000',
+    x: 0,
+    y: 0,
+    scale: 1,
+    duration: 0
+},
+    {
+        name: 'SWE27',
+        x: 15,
+        y: 109,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWE25',
+        x: 15,
+        y: 109,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWE26',
+        x: 15,
+        y: 109,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWE09',
+        x: 15,
+        y: -30,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWE08',
+        x: 12,
+        y: -153,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWE07',
+        x: 12,
+        y: -222,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWE06',
+        x: 12,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWE05',
+        x: 42,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWE04',
+        x: 175,
+        y: -280,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWE14',
+        x: 128,
+        y: -190,
+        scale: 1.6,
+        duration: 2000
+    },
+    {
+        name: 'SWE03',
+        x: 195,
+        y: -104,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWE02',
+        x: 200,
+        y: -38,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWE01',
+        x: 200,
+        y: 34,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWE10',
+        x: 170,
+        y: 90,
+        scale: 2.3,
+        duration: 2000
+    },
+    {
+        name: 'SWE24',
+        x: 152,
+        y: 131,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWE23',
+        x: 148,
+        y: 198,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWE10B',
+        x: 209.5,
+        y: 188,
+        scale: 2.5,
+        duration: 2000
+    },
+    {
+        name: 'SWE10C',
+        x: 209.5,
+        y: 188,
+        scale: 2.5,
+        duration: 2000
+    },
+];
 
 export {
     mb_G_rooms, mb_1_rooms, mb_2_rooms, mb_3_rooms, mb_4_rooms, mb_5_rooms, mb_6_rooms, mb_7_rooms,
