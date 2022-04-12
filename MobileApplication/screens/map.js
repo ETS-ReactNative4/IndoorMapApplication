@@ -53,14 +53,23 @@ function Floor(props) {
 			|| isThisRoom.match(/Great Hall/i) 
 			|| isThisRoom.match(/Tierra/i) 
 			|| isThisRoom.match(/Costa/i) 
-			|| isThisRoom.match(/Help Desk/i) ) 
+			|| isThisRoom.match(/Help Desk/i)
+			|| isThisRoom.match(/Conference/i)
+			|| isThisRoom.match(/Council/i)
+			|| isThisRoom.match(/Sartander/i))
 			{
 				isThisBuilding = "MB";
 				isThisFloor = "G";
 		}
+		if (isThisRoom.match(/EPS Reception/i)) {
+			isThisBuilding = "MB";
+			isThisFloor = "1";
+		}
 		if (isThisRoom.match(/abs/i)
 			|| isThisRoom.match(/Wright/i)
-			|| isThisRoom.match(/Sumpner/i)) {
+			|| isThisRoom.match(/Sumpner/i)
+			|| isThisRoom.match(/Student Support/i)
+			|| isThisRoom.match(/UG/i)) {
 			isThisBuilding = "MB";
 			isThisFloor = "6";
 		}
@@ -89,12 +98,13 @@ function Floor(props) {
 		}
 	}
 
-
+    
 	//Check for all main building floors.
 	if (isThisBuilding == "MB") {
 		switch (isThisFloor) {
 			case 'G':
-				if (mb_G_rooms.indexOf(isThisRoom) == -1) {
+				var index = getIndex(mb_G_rooms, isThisRoom);
+				if (index == -1) {
 					return (
 						<View style={styles.mainView}>
 							<Text style={styles.appText}>Error!</Text>
@@ -113,6 +123,10 @@ function Floor(props) {
 						</View>
 					)
 				}
+				var x = mb_G_rooms[index].x;
+				var y = mb_G_rooms[index].y;
+				var scale = mb_G_rooms[index].scale;
+				var duration = mb_G_rooms[index].duration;                
 				return (
 					<View>
 					<View style={styles.mainView}>
@@ -123,7 +137,8 @@ function Floor(props) {
 					   maxScale={2.5}
 					   minScale={1}
 					   enableCenterFocus={false}
-					   useNativeDriver={true}>
+							useNativeDriver={true}
+							centerOn={{ x: x, y: y, scale: scale, duration: duration }}>
 							<Image 
 							source={require('../assets/MainBuildingFloors/MBGroundFloor.png')} 
 							style={styles.zoomedMBImg}
@@ -136,7 +151,8 @@ function Floor(props) {
 				)
 				break;
 			case '1':
-				if (mb_1_rooms.indexOf(isThisRoom) == -1) {
+				var index = getIndex(mb_1_rooms, isThisRoom);
+				if (index == -1) {
 					return (
 						<View style={styles.mainView}>
 							<Text style={styles.appText}>Error!</Text>
@@ -155,6 +171,10 @@ function Floor(props) {
 						</View>
 					)
 				}
+				var x = mb_1_rooms[index].x;
+				var y = mb_1_rooms[index].y;
+				var scale = mb_1_rooms[index].scale;
+				var duration = mb_1_rooms[index].duration;
 				return (
                     <View>
 				<View style={styles.mainView}>
@@ -165,7 +185,8 @@ function Floor(props) {
 					   maxScale={2.5}
 					   minScale={1}
 					   enableCenterFocus={false}
-					   useNativeDriver={true}>
+						useNativeDriver={true}
+						centerOn={{ x: x, y: y, scale: scale, duration: duration }}>
 							<Image 
 							source={require('../assets/MainBuildingFloors/MBFirstFloor.png')} 
 							style={styles.zoomedMBImg}
@@ -177,7 +198,8 @@ function Floor(props) {
 				)
 				break;
 			case '2':
-				if (mb_2_rooms.indexOf(isThisRoom) == -1) {
+				var index = getIndex(mb_2_rooms, isThisRoom);
+				if (index == -1) {
 					return (
 						<View style={styles.mainView}>
 							<Text style={styles.appText}>Error!</Text>
@@ -196,6 +218,10 @@ function Floor(props) {
 						</View>
 					)
 				}
+				var x = mb_2_rooms[index].x;
+				var y = mb_2_rooms[index].y;
+				var scale = mb_2_rooms[index].scale;
+				var duration = mb_2_rooms[index].duration;                
 				return (
                     <View>
 				<View style={styles.mainView}>
@@ -206,7 +232,8 @@ function Floor(props) {
 					   maxScale={2.5}
 					   minScale={1}
 					   enableCenterFocus={false}
-					   useNativeDriver={true}>
+						useNativeDriver={true}
+						centerOn={{ x: x, y: y, scale: scale, duration: duration }}>
 							<Image 
 							source={require('../assets/MainBuildingFloors/MBSecondFloor.png')} 
 							style={styles.zoomedMBImg}
@@ -218,7 +245,8 @@ function Floor(props) {
 				)
 				break;
 			case '3':
-				if (mb_3_rooms.indexOf(isThisRoom) == -1) {
+				var index = getIndex(mb_3_rooms, isThisRoom);
+				if (index == -1) {
 					return (
 						<View style={styles.mainView}>
 							<Text style={styles.appText}>Error!</Text>
@@ -237,6 +265,10 @@ function Floor(props) {
 						</View>
 					)
 				}
+				var x = mb_3_rooms[index].x;
+				var y = mb_3_rooms[index].y;
+				var scale = mb_3_rooms[index].scale;
+				var duration = mb_3_rooms[index].duration;
 				return (
                 <View>
 				<View style={styles.mainView}>
@@ -247,7 +279,8 @@ function Floor(props) {
 					   maxScale={2.5}
 					   minScale={1}
 					   enableCenterFocus={false}
-					   useNativeDriver={true}>
+						useNativeDriver={true}
+						centerOn={{ x: x, y: y, scale: scale, duration: duration }}>
 							<Image 
 							source={require('../assets/MainBuildingFloors/MBThirdFloor.png')} 
 							style={styles.zoomedMBImg}
@@ -259,7 +292,8 @@ function Floor(props) {
 				)
 				break;
 			case '4':
-				if (mb_4_rooms.indexOf(isThisRoom) == -1) {
+				var index = getIndex(mb_4_rooms, isThisRoom);
+				if (index == -1) {
 					return (
 						<View style={styles.mainView}>
 							<Text style={styles.appText}>Error!</Text>
@@ -277,7 +311,11 @@ function Floor(props) {
 							</TouchableOpacity>
 						</View>
 					)
-				}                
+				}
+				var x = mb_4_rooms[index].x;
+				var y = mb_4_rooms[index].y;
+				var scale = mb_4_rooms[index].scale;
+				var duration = mb_4_rooms[index].duration;
 				return (
                     <View>
 				<View style={styles.mainView}>
@@ -288,7 +326,8 @@ function Floor(props) {
 					   maxScale={2.5}
 					   minScale={1}
 					   enableCenterFocus={false}
-					   useNativeDriver={true}>
+						useNativeDriver={true}
+						centerOn={{ x: x, y: y, scale: scale, duration: duration }}>
 							<Image 
 							source={require('../assets/MainBuildingFloors/MBFourthFloor.png')} 
 							style={styles.zoomedMBImg}
@@ -300,7 +339,8 @@ function Floor(props) {
 				)
 				break;
 			case '5':
-				if (mb_5_rooms.indexOf(isThisRoom) == -1) {
+				var index = getIndex(mb_5_rooms, isThisRoom);
+				if (index == -1) {
 					return (
 						<View style={styles.mainView}>
 							<Text style={styles.appText}>Error!</Text>
@@ -318,7 +358,11 @@ function Floor(props) {
 							</TouchableOpacity>
 						</View>
 					)
-				}                
+				}
+				var x = mb_5_rooms[index].x;
+				var y = mb_5_rooms[index].y;
+				var scale = mb_5_rooms[index].scale;
+				var duration = mb_5_rooms[index].duration;
 				return (
                     <View>
 				<View style={styles.mainView}>
@@ -329,7 +373,8 @@ function Floor(props) {
 					   maxScale={2.5}
 					   minScale={1}
 					   enableCenterFocus={false}
-					   useNativeDriver={true}>
+						useNativeDriver={true}
+						centerOn={{ x: x, y: y, scale: scale, duration: duration }}>
 							<Image 
 							source={require('../assets/MainBuildingFloors/MBFifthFloor.png')} 
 							style={styles.zoomedMBImg}
@@ -341,7 +386,8 @@ function Floor(props) {
 				)
 				break;
 			case '6':
-				if (mb_6_rooms.indexOf(isThisRoom) == -1) {
+				var index = getIndex(mb_6_rooms, isThisRoom);
+				if (index == -1) {
 					return (
 						<View style={styles.mainView}>
 							<Text style={styles.appText}>Error!</Text>
@@ -360,6 +406,10 @@ function Floor(props) {
 						</View>
 					)
 				}
+				var x = mb_6_rooms[index].x;
+				var y = mb_6_rooms[index].y;
+				var scale = mb_6_rooms[index].scale;
+				var duration = mb_6_rooms[index].duration;
 				return (
                     <View>
 				<View style={styles.mainView}>
@@ -370,7 +420,8 @@ function Floor(props) {
 					   maxScale={2.5}
 					   minScale={1}
 					   enableCenterFocus={false}
-					   useNativeDriver={true}>
+						useNativeDriver={true}
+						centerOn={{ x: x, y: y, scale: scale, duration: duration }}>
 							<Image 
 							source={require('../assets/MainBuildingFloors/MBSixthFloor.png')} 
 							style={styles.zoomedMBImg}
@@ -382,7 +433,8 @@ function Floor(props) {
 				)
 				break;
 			case '7':
-				if (mb_7_rooms.indexOf(isThisRoom) == -1) {
+				var index = getIndex(mb_7_rooms, isThisRoom);
+				if (index == -1) {
 					return (
 						<View style={styles.mainView}>
 							<Text style={styles.appText}>Error!</Text>
@@ -400,7 +452,11 @@ function Floor(props) {
 							</TouchableOpacity>
 						</View>
 					)
-				}                
+				}
+				var x = mb_7_rooms[index].x;
+				var y = mb_7_rooms[index].y;
+				var scale = mb_7_rooms[index].scale;
+				var duration = mb_7_rooms[index].duration;
 				return (
                     <View>
 				<View style={styles.mainView}>
@@ -411,7 +467,8 @@ function Floor(props) {
 					   maxScale={2.5}
 					   minScale={1}
 					   enableCenterFocus={false}
-					   useNativeDriver={true}>
+						useNativeDriver={true}
+						centerOn={{ x: x, y: y, scale: scale, duration: duration }}>
 							<Image 
 							source={require('../assets/MainBuildingFloors/MBSeventhFloor.png')} 
 							style={styles.zoomedMBImg}
