@@ -21,6 +21,7 @@ To launch the Expo Developer tools, then open up your phone emulator from Androi
 - Ability to zoom in, zoom out and pan.
 - Application is coded in React-Native.
 - Basic colour-code system.
+- Automatic zoom and pan system when searching a room.
 
 ## Future Concepts and Ideas
 
