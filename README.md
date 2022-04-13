@@ -35,6 +35,7 @@ To launch the Expo Developer tools, then open up your phone emulator from Androi
 - dudigital/react-native-zoomable-view by SimonErich (https://github.com/DuDigital/react-native-zoomable-view)
 - react-native-community by Kelset (https://github.com/react-native-community/releases)
 - react-navigation by Satya164 (https://github.com/react-navigation/react-navigation)
+- ascoders/react-native-image-zoom by ArtemKolichenkov (https://github.com/ascoders/react-native-image-zoom)
 
 ## Prerequisities
 
