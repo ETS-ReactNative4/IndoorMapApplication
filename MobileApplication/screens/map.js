@@ -31,9 +31,9 @@ function WasSearched(props) {
 }
 
 //Retrieve the index of the array of objects if it contains a name
-function getIndex(array, name) {
+function getIndex(rooms, name) {
 	for (var i = 0; i < array.length; i++) {
-		if (array[i].name.toUpperCase() === name.toUpperCase()) {
+		if (rooms[i].name.toUpperCase() === name.toUpperCase()) {
 			return i;
 		}
 	}
