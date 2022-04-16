@@ -7,7 +7,7 @@ import {
 	sw_G_rooms, sw_1_rooms, sw_2_rooms, sw_3_rooms, sw_4_rooms, sw_5_rooms, sw_6_rooms, sw_7_rooms, sw_8_rooms, sw_9_rooms, sw_10_rooms, sw_11_rooms
 } from '../rooms.js';
 
-//onMove = {(e) => console.log(e.positionX, e.positionY, e.scale)}
+//onMove = {(e) => console.log(e.positionX, e.positionY, e.scale)} <- Used to track the position to get coordinates for each room.
 
 function WasSearched(props) {
 	var navigation = props.navigate;
@@ -1127,7 +1127,7 @@ function Floor(props) {
 					   maxScale={2.5}
 					   minScale={1}
 					   enableCenterFocus={false}
-					   useNativeDriver={true}
+						useNativeDriver={true}
 					   centerOn={{ x: x, y: y, scale: scale, duration: duration }}>
 							<Image 
 							source={require('../assets/SouthWingFloors/SouthWing_Firstfloor.png')} 
