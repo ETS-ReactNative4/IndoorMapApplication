@@ -7548,6 +7548,20 @@ const sw_1_rooms = [{
         scale: 2.5,
         duration: 2000
     },
+    {
+        name: 'PLACEMENT',
+        x: 83,
+        y: -81,
+        scale: 1.25,
+        duration: 2000
+    },
+    {
+        name: 'PLACEMENT OFFICE',
+        x: 83,
+        y: -81,
+        scale: 1.25,
+        duration: 2000
+    },
 ];
 
 const sw_2_rooms = [{
