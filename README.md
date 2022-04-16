@@ -28,7 +28,6 @@ To launch the Expo Developer tools, then open up your phone emulator from Androi
 - History list of rooms based on the user's search. (Also the ability to clear history)
 - Dynamic tracking - Such as drawing lines from Point A to Point B.
 - Highlighting a room when searched in a different and more obvious colour.
-- Auto pan/zoom to the room that was searched.
 - Ability to move up from Main Building to North Wing, and move down from Main Building to South Wing.
 
 ## Dependencies
